@@ -6,4 +6,4 @@ During this catastrope, we saw daily case counts growing as high as 100,000 new 
 
 ![Covid-19_DailyCases.PNG](Resources/Covid-19_DailyCases.PNG)
 
-In the figure above, we see 
+In the figure above, we see that the newly confirmed Covid-19 cases tend to slowly increase with time up until January of 2021. In Feburary of 2021, we see a remarkable change in the shift of newly confirmed covid-19 cases per day. The case count begins to decrease rapdily with time, up until a support line is reached. This support line is very difficult to go below, because of factors such as available vaccinations, limited medical and economical resources available, and social distancing regulations changing.
