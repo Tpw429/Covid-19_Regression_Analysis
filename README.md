@@ -10,4 +10,4 @@ In the figure above, we see that the newly confirmed Covid-19 patients tend to s
 
 ## The Plan Ahead
 
-In our project, we will be analyzing details such as the type of stock thriving and dying because of the virus, what factors affect the case count, and predicting if cases will rise or fall in the near future.
+The first step of our project will be to find a dataset that provides solid data. Then we will work to clean and explore the data with Jupyter Notebook and the Pandas library. 
