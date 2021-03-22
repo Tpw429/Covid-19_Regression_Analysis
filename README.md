@@ -20,6 +20,8 @@ In the first week of the project, we had to make decisions on which members woul
 3) Circle Role - Ray Hunt
 - This team member will be in charge of the mockup database. We will be creating an SQL-database, including an ERD of the database and a document showing how it is intergated in the database and its conection with the code.
 
+- Using quickdatabasedesigns.com we created a conceptual design that includes two tables. The first is the master_country table that stores the following columns iso_code (primary key), country_name, population, gdp. The second table will store the vaccination data by country. The results of our conceptual diagram is shown below.
+
 ![QuickDBD_vaccination.PNG](Resources/QuickDBD_vaccination.PNG)
 
 
