@@ -20,6 +20,9 @@ In the first week of the project, we had to make decisions on which members woul
 3) Circle Role - Ray Hunt
 - This team member will be in charge of the mockup database. We will be creating an SQL-database, including an ERD of the database and a document showing how it is intergated in the database and its conection with the code.
 
+![QuickDBD_vaccination.PNG](Resources/QuickDBD_vaccination.PNG)
+
+
 4) X Role - Tyler Engalla
 - This team member will focus on the technology side of the project. They will consider the best tools to use for the project, what will be used in each section, and how each of these functions will flow together smoothly to provide a crisp result.
 
