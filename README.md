@@ -25,4 +25,5 @@ In the first week of the project, we had to make decisions on which members woul
 
 ## The Plan Ahead
 
-In our project, we will be analyzing details such as the type of stock thriving and dying because of the virus, what factors affect the case count, and predicting if cases will rise or fall in the near future.
+In our project, we will be analyzing if a country's GDP affects the rate at which vaccinations are being adminsitered and when do we expect each country to achieve full vaccination. 
+
