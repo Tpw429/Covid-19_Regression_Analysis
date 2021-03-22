@@ -12,7 +12,7 @@ In the figure above, we see that the newly confirmed Covid-19 patients tend to s
 In the first week of the project, we had to make decisions on which members would be responsible for certain parts of the projects. As this was a group effort, many of often worked together to come to these conclusions. For week one, the following members were given these roles:
 
 1) Square Role - Thomas Watson
-Sqaure Role Description - This member is in charge of setting up the repository for the team to use. In addition, this member will ensure that each of the four members has their our branch to test and push changes to the main branch.
+Sqaure Role Description - This member is in charge of setting up the repository for the team to use. In addition, this member will ensure that each of the four members has their our branch to test and push changes to the main branch. This person is also in charge of compiling summaries, data, and images from other branches.
 
 2) Triangle Role - Akshaya Kamble 
 Triangle Role Description - This team member will be responsible for creating a machine learning model. We will consider which model to choose, how to train the model, the accuracy of the model, and how it works.
