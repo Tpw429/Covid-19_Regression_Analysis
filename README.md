@@ -17,6 +17,8 @@ In the first week of the project, we had to make decisions on which members woul
 2) Triangle Role - Akshaya Kamble 
 - This team member will be responsible for creating a machine learning model. We will consider which model to choose, how to train the model, the accuracy of the model, and how it works.
 
+- For the final project we have selected Supervised Machine learning, and we will use a Linear Regression Model to help us analyze data from Covid Vaccinations and GDP of all countries. This model will help predict distributions of the vaccines in each country. As we have continuous data we will identify the relation between data and make predictions. A diagram of or linear regression thought process has been included below.
+
 ![Linear_Regression.PNG](Resources/Linear_Regression.PNG)
 
 3) Circle Role - Ray Hunt
