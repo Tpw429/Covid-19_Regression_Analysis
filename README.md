@@ -27,3 +27,5 @@ In the first week of the project, we had to make decisions on which members woul
 
 In our project, we will be analyzing if a country's GDP affects the rate at which vaccinations are being adminsitered and when do we expect each country to achieve full vaccination. 
 
+We will be collecting data from Kaggle around vaccination rates and combining that with GDP data gathered to apply to our linear regression model to answer the above questions.  
+
