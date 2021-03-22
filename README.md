@@ -12,20 +12,16 @@ In the figure above, we see that the newly confirmed Covid-19 patients tend to s
 In the first week of the project, we had to make decisions on which members would be responsible for certain parts of the projects. As this was a group effort, many of often worked together to come to these conclusions. For week one, the following members were given these roles:
 
 1) Square Role - Thomas Watson
-
-This member is in charge of setting up the repository for the team to use. In addition, this member will ensure that each of the four members has their our branch to test and push changes to the main branch.
+-This member is in charge of setting up the repository for the team to use. In addition, this member will ensure that each of the four members has their our branch to test and push changes to the main branch.
 
 2) Triangle Role - Akshaya Kamble 
-
-This team member will be responsible for creating a machine learning model. We will consider which model to choose, how to train the model, the accuracy of the model, and how it works.
+-This team member will be responsible for creating a machine learning model. We will consider which model to choose, how to train the model, the accuracy of the model, and how it works.
 
 3) Circle Role - Ray Hunt
-
-This team member will be in charge of the mockup database. We will be creating an SQL-database, including an ERD of the database and a document showing how it is intergated in the database and its conection with the code.
+-This team member will be in charge of the mockup database. We will be creating an SQL-database, including an ERD of the database and a document showing how it is intergated in the database and its conection with the code.
 
 4) X Role - Tyler Engalla
-
-This team member will focus on the technology side of the project. They will consider the best tools to use for the project, what will be used in each section, and how each of these functions will flow together smoothly to provide a crisp result.
+-This team member will focus on the technology side of the project. They will consider the best tools to use for the project, what will be used in each section, and how each of these functions will flow together smoothly to provide a crisp result.
 
 ## The Plan Ahead
 
