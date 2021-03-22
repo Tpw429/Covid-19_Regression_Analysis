@@ -23,7 +23,7 @@ In the first week of the project, we had to make decisions on which members woul
 
 #### Triangle Role Work Done:
 
-- For the final project we have selected Supervised Machine learning, and we will use a Linear Regression Model to help us analyze data from Covid Vaccinations and GDP of all countries. This model will help predict distributions of the vaccines in each country. As we have continuous data we will identify the relation between data and make predictions. A diagram of or linear regression thought process has been included below.
+- For the final project we have selected Supervised Machine learning, and we will use a Linear Regression Model to help us analyze data from Covid Vaccinations and GDP of all countries. This model will help predict distributions of the vaccines in each country. As we have continuous data we will identify the relation between data and make predictions. A diagram of our linear regression thought process has been included below.
 
 ![Linear_Regression.PNG](Resources/Linear_Regression.PNG)
 
