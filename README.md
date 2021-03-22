@@ -17,6 +17,8 @@ In the first week of the project, we had to make decisions on which members woul
 2) Triangle Role - Akshaya Kamble 
 - This team member will be responsible for creating a machine learning model. We will consider which model to choose, how to train the model, the accuracy of the model, and how it works.
 
+![Linear_Regression.PNG](Resources/Linear_Regression.PNG)
+
 3) Circle Role - Ray Hunt
 - This team member will be in charge of the mockup database. We will be creating an SQL-database, including an ERD of the database and a document showing how it is intergated in the database and its conection with the code.
 
