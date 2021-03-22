@@ -16,7 +16,7 @@ In the first week of the project, we had to make decisions on which members woul
 
 Square Role Work Done
 
-- This member set up the GitHub repository and got everyone to make their own branch. In addition, this role was in charge of compiling the report findings in the main read.me branch. In addition, this role made sure that all images, links, and notes from each individual branch were properly pushed into the report.
+- This member set up the GitHub repository and got everyone to make their own branch. This role was in charge of compiling the report findings in the main read.me branch. In addition, this role made sure that all images, links, and notes from each individual branch were properly pushed into the report.
 
 ### 2) Triangle Role - Akshaya Kamble 
 - This team member will be responsible for creating a machine learning model. We will consider which model to choose, how to train the model, the accuracy of the model, and how it works.
