@@ -29,3 +29,6 @@ In our project, we will be analyzing if a country's GDP affects the rate at whic
 
 We will be collecting data from Kaggle around vaccination rates and combining that with GDP data gathered to apply to our linear regression model to answer the above questions.  
 
+GDP Data: https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?name_desc=false
+Covid Vaccination Rate Data: https://www.kaggle.com/gpreda/covid-world-vaccination-progress
+
