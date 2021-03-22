@@ -32,6 +32,12 @@ In the first week of the project, we had to make decisions on which members woul
 4) X Role - Tyler Engalla
 - This team member will focus on the technology side of the project. They will consider the best tools to use for the project, what will be used in each section, and how each of these functions will flow together smoothly to provide a crisp result.
 
+For this role, there are several questions we must consider:
+- Which tools are the best fit for our project?
+- What tool will be used for each section?
+
+
+
 ## The Plan Ahead
 
 In our project, we will be analyzing if a country's GDP affects the rate at which vaccinations are being adminsitered and when we expect each country to achieve full vaccination. 
