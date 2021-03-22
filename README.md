@@ -63,7 +63,7 @@ In addition to using a Flask template, we will also integrate JavaScript, HTML, 
 
 In our project, we will be analyzing if a country's GDP affects the rate at which vaccinations are being adminsitered and when we expect each country to achieve full vaccination. 
 
-We will be collecting data from Kaggle around vaccination rates and combining that with GDP data gathered to apply to our linear regression model to answer the above questions.  
+We will be collecting data from Kaggle around vaccination rates and combining that with GDP data gathered to apply to our linear regression model to answer questions such as how GDP affects vaccination rates,   
 
 GDP Data: https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?name_desc=false
 
