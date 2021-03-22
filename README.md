@@ -14,6 +14,8 @@ In the first week of the project, we had to make decisions on which members woul
 1) Square Role - Thomas Watson
 - This member is in charge of setting up the repository for the team to use. In addition, this member will ensure that each of the four members has their our branch to test and push changes to the main branch.
 
+- This member set up the GitHub repository and got everyone to make their own branch. In addition, this role was in charge of compiling the report findings in the main read.me branch. In addition, this role made sure that all images, links, and notes from each individual branch were properly pushed into the report.
+
 2) Triangle Role - Akshaya Kamble 
 - This team member will be responsible for creating a machine learning model. We will consider which model to choose, how to train the model, the accuracy of the model, and how it works.
 
