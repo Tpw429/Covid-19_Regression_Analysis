@@ -46,16 +46,16 @@ For this role, there are several questions we must consider:
 - Which tools are the best fit for our project?
 - What tool will be used for each section?
 
-1) Data Cleaning and Analysis
+1) Data Cleaning and Analysis -
 Jupyter Notebook and the Pandas library will be used to clean the data and perform an exploratory analysis. Further analysis will be completed using Python.
 
-2) Database Storage
+2) Database Storage -
 Postgres is the database we intend to use, and we will integrate Flask to display the data.
 
-3) Machine Learning
+3) Machine Learning -
 SciKitLearn is the ML library we'll be using to create a linear regression. We'll train our algorithm with a histocal dataset on Covid Vaccinations and GDP of all countries.
 
-4) Dashboard
+4) Dashboard -
 In addition to using a Flask template, we will also integrate JavaScript, HTML, and CSS with the Plotly visualization library to build an interactive webpage. In addition, we may include the D3 library to visualize our data geographically.
 
 
