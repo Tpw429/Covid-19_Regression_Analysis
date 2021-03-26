@@ -27,6 +27,8 @@ In the first week of the project, we had to make decisions on which members woul
 
 ![Linear_Regression.PNG](Resources/Linear_Regression.PNG)
 
+For the Linear Regression model we have imported a new Folder into our main Repository called Machine_Learning_1. This Linear Regression model takes in data from our provisional database and outputs labels for input data. This model lays a strong foundation for how we will move forward in the coming weeks.
+
 ### 3) Circle Role - Ray Hunt
 - This team member will be in charge of the mockup database. We will be creating an SQL-database, including an ERD of the database and a document showing how it is intergated in the database and its conection with the code.
 
