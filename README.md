@@ -72,3 +72,7 @@ GDP Data: https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?name_desc=false
 Covid Vaccination Rate Data: https://www.kaggle.com/gpreda/covid-world-vaccination-progress
 
 These datasets include information about GDP, vaccations given, total vaccinations, vaccinations per day, country administered, date, and much more. These are just several of the variables that we will be taking during this project.
+
+## Storyboard
+We created a storyboard to describe how we will visualize our outcomes using Google slides located at the link below:
+https://docs.google.com/presentation/d/160j7slMeWWwnzbZd6SgaqRAt3yMQrFRDSncezrBMbZ0/edit?usp=sharing
