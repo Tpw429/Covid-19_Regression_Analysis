@@ -67,8 +67,18 @@ In our project, we will be analyzing if a country's GDP affects the rate at whic
 
 We will be collecting data from Kaggle around vaccination rates and combining that with GDP data gathered to apply to our linear regression model to answer questions such as how GDP affects vaccination rates and when we expect full vaccination or immunity within a country.
 
-GDP Data: https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?name_desc=false
+## Data Source
 
-Covid Vaccination Rate Data: https://www.kaggle.com/gpreda/covid-world-vaccination-progress
+CDC Link: https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?name_desc=false
+Kaggle Data: https://www.kaggle.com/gpreda/covid-world-vaccination-progress
+World Bank Data: https://data.worldbank.org/indicator/NY.GDP.MKTP.CD
+Our World In Data: https://github.com/owid/covid-19-data/tree/master/public/data
+UNDP data for hdi : http://hdr.undp.org/en/data
 
 These datasets include information about GDP, vaccations given, total vaccinations, vaccinations per day, country administered, date, and much more. These are just several of the variables that we will be taking during this project.
+
+## Communication Protocols
+
+1. Slack - Sharing files and seeking team approvals
+2. Class breakout rooms - Discussing if the segment rubrics are met and checking progress for each member.
+
