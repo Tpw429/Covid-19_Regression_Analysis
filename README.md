@@ -45,6 +45,8 @@ We will be collecting data from Kaggle around vaccination rates and combining th
 
 ## Data Source and Description
 
+The data used in this project are included in the links below:
+
 1. CDC Link: https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?name_desc=false
 2. Kaggle Data: https://www.kaggle.com/gpreda/covid-world-vaccination-progress
 3. World Bank Data: https://data.worldbank.org/indicator/NY.GDP.MKTP.CD
