@@ -84,13 +84,13 @@ Given our strict timeline on this Covid-19 analysis, we would like to analyze ho
 1. Importing data from websites in csv and excel formats
 2. Cleaning data in Jupyter notebook using the following methods:
 
-	a. Checking Data Types
-	b. Replace NaN by 0
-	c. Removing Nan
-	d. Outlier detection with help of scatter plot
-	e. Editing column names by removing spaces 
-	f. Changing column names to match the SQL schema
-	g. Filter required columns as some tables contain irrelevant data for project
+	a. Checking Data Types <br/>
+	b. Replace NaN by 0 <br/>
+	c. Removing Nan <br/>
+	d. Outlier detection with help of scatter plot <br/>
+	e. Editing column names by removing spaces <br/>
+	f. Changing column names to match the SQL schema <br/>
+	g. Filter required columns as some tables contain irrelevant data for project <br/>
 
 3. Making Database connection to Postgres and sending the cleaned Data Frames from Jupyter notebook to Postgres
 4. Joining tables in postgres to create master data files
