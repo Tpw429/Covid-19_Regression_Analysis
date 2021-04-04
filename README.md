@@ -117,3 +117,19 @@ Limitations with this model would be around outliers having a huge effect that t
 ## The Visualization Aspect
 
 Portraying results is important because it brings weight to our analysis. Images, interactive figures, Github, and Google Slides are all powerful tools which can help us share our findings to the masses. 
+
+Setting the stage for what we hope to accomplish by the end of the project, we will be setting forth a blueprint of what we hope to achieve. These ideas are shown below.
+
+World Map:
+
+Our first chart will be an interactive map of the world with data for select countries. Based on filter selection, a tooltip will appear on hover-over to display that country’s name, population and  GDP, Health Data Index or total vaccinations rate.
+
+Bubble Chart:
+
+A drop-down menu will let the user select the top 10 countries by GDP,  bottom 10 countries by GDP or all countries. When the selection is made the bubble chart will update displaying countries as bubbles. The Y axis is population, the X axis is GDP and the size of the bubble is determined by total vaccinations per hundred.
+
+Heatmap: 
+
+Another interesting idea we had was with heatmaps are trying to illustrate the covid hotspots throughout the world. This would be based on Covid-19 cases caught in a certain density.
+
+
