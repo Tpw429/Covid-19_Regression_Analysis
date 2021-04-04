@@ -66,17 +66,17 @@ The data used in this project are included in the links below:
 These datasets include information about GDP, vaccations given, total vaccinations, vaccinations per day, country administered, date, and much more. These five data sources have been chosen based off accuracy, their input type, and completeness. Descriptions of our files are included below.
 
 1. country_gdp
-This file from world bank has GDP for all countries starting from year 1960 to 2019, Since we are using covid-19 data for the project we will use gdp from the year 2019.
+- This file from world bank has GDP for all countries starting from year 1960 to 2019, Since we are using covid-19 data for the project we will use gdp from the year 2019.
 
 2. country_vaccinations
-This file from kaggle has vaccination data for all countries along with dates,As the vaccinations are still 
+- This file from kaggle has vaccination data for all countries along with dates,As the vaccinations are still 
 in progress some countries have advanced towards some small percent of population considered fully vaccinated while some countries no not have any data.
 
 3. world_population
-This file from world bank has populations for all countries from year 1960 to 2019. As per project requirements we have used data only for the year 2019.This data is added to the gdp data file
+- This file from world bank has populations for all countries from year 1960 to 2019. As per project requirements we have used data only for the year 2019.This data is added to the gdp data file
 
 4. human_dev_index
-This file from UNITED NATIONS DEVELOPMENT PROGRAMME has human development index(HDI) for all countries along with Human Development Type which are required for the project
+- This file from UNITED NATIONS DEVELOPMENT PROGRAMME has human development index(HDI) for all countries along with Human Development Type which are required for the project
 
 5. Infection_Data
 This file from github repository has updated data from Our World in Data.This file has data about the infections rates,deaths, new case,hospitalization rate, testing dates for different countries.We have filtered the dataset as per project requirements and included data like total cases and total deaths. 
@@ -84,4 +84,21 @@ This file from github repository has updated data from Our World in Data.This fi
 ## Questions we Hope to Answer
 
 Given our strict timeline on this Covid-19 analysis, we would like to analyze how certain attributes such as age, Gross Domestic Product (GDP), Human Development Index (HDI), and population directly impact the spread of Covid-19. If time allows, we would also be interesting in creating a model to help us predict the spread of Covid-19 in the future. In addition, by the end of the project our visuals should be extremely user friendly and portray an effective message.
+
+## Description of Data Exploration Phase
+
+1.Importing data from websites in csv and excel formats
+2. Cleaning data in Jupyter notebook using the following methods
+a. Checking Data Types
+b. Replace NaN by 0
+	c. Removing Nan
+	d. Outlier detection with help of scatter plot
+	e. Editing column names by removing spaces 
+	f. Changing column names to match the SQL schema
+	g. Filter required columns as some tables contain irrelevant data for project
+
+3. Making Database connection to Postgres and sending the cleaned Data Frames from Jupyter notebook to Postgres
+4. Joining tables in postgres to create master data files
+5. Making database connection to Postgres to import the joined tables in Jupyter notebook as new DataFrame.
+6. Using the Data Frame for machine learning 
 
