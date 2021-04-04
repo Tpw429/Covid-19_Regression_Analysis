@@ -97,3 +97,6 @@ Given our strict timeline on this Covid-19 analysis, we would like to analyze ho
 5. Making database connection to Postgres to import the joined tables in Jupyter notebook as new DataFrame.
 6. Using the Data Frame for machine learning 
 
+## Description of the Analysis Phase
+
+## Machine Learning Model
