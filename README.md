@@ -17,15 +17,9 @@ In the first week of the project, we had to make decisions on which technologies
 
 For the Linear Regression model we have imported a new Folder into our main Repository called Machine_Learning_1. This Linear Regression model takes in data from our provisional database and outputs labels for input data. This model lays a strong foundation for how we will move forward in the coming weeks.
 
-### 3) Circle Role - Ray Hunt
-- This team member will be in charge of the mockup database. We will be creating an SQL-database, including an ERD of the database and a document showing how it is intergated in the database and its conection with the code.
-
-#### Circle Role Work Done:
-
-- Using quickdatabasedesigns.com we created a conceptual design that includes two tables. The first is the master_country table that stores the following columns iso_code (primary key), country_name, population, gdp. The second table will store the vaccination data by country. The results of our conceptual diagram is shown below.
+- Using quickdatabasedesigns.com we created a conceptual design for our mockup database that includes two tables. The first is the master_country table that stores the following columns iso_code (primary key), country_name, population, gdp. The second table will store the vaccination data by country. The results of our conceptual diagram is shown below.
 
 ![QuickDBD_vaccination.PNG](Resources/QuickDBD_vaccination.PNG)
-
 
 Several other questions we considered were as follows:
 - Which tools are the best fit for our project?
@@ -43,7 +37,6 @@ SciKitLearn is the ML library we'll be using to create a linear regression. We'l
 4) Dashboard -
 In addition to using a Flask template, we will also integrate JavaScript, HTML, and CSS with the Plotly visualization library to build an interactive webpage. In addition, we may include the D3 library to visualize our data geographically.
 
-
 ## The Plan Ahead
 
 In our project, we will be analyzing if a country's GDP affects the rate at which vaccinations are being adminsitered and when we expect each country to achieve full vaccination. 
@@ -58,9 +51,11 @@ We will be collecting data from Kaggle around vaccination rates and combining th
 4. Our World In Data: https://github.com/owid/covid-19-data/tree/master/public/data
 5. UNDP data for hdi : http://hdr.undp.org/en/data
 
-These datasets include information about GDP, vaccations given, total vaccinations, vaccinations per day, country administered, date, and much more. These are just several of the variables that we will be taking during this project.
+These datasets include information about GDP, vaccations given, total vaccinations, vaccinations per day, country administered, date, and much more. These five data sources have been chosen based off accuracy, their input type, and completeness.
 
 ## Communication Protocols
+
+During this project, we will be using several forms of communication to make sure information is being administered to everyone.
 
 1. Slack - Sharing files and seeking team approvals
 2. Class breakout rooms - Discussing if the segment rubrics are met and checking progress for each member.
