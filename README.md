@@ -116,4 +116,4 @@ Limitations with this model would be around outliers having a huge effect that t
 
 ## The Visualization Aspect
 
-Portraying results is important because it brings weight to our analysis. Figures, interactive images, Github and Google Slides are all powerful tools which can help us share our findings to the masses. 
+Portraying results is important because it brings weight to our analysis. Images, interactive figures, Github, and Google Slides are all powerful tools which can help us share our findings to the masses. 
