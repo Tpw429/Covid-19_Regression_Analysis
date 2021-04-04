@@ -11,11 +11,6 @@ In the figure above, we see that the newly confirmed Covid-19 patients tend to s
 ## Task Delegation and Work
 In the first week of the project, we had to make decisions on which members would be responsible for certain parts of the projects. As this was a group effort, many of often worked together to come to these conclusions. For week one, the following members were given these roles:
 
-### 2) Triangle Role - Akshaya Kamble 
-- This team member will be responsible for creating a machine learning model. We will consider which model to choose, how to train the model, the accuracy of the model, and how it works.
-
-#### Triangle Role Work Done:
-
 - For the final project we have selected Supervised Machine learning, and we will use a Linear Regression Model to help us analyze data from Covid Vaccinations and GDP of all countries. This model will help predict distributions of the vaccines in each country. As we have continuous data we will identify the relation between data and make predictions. A diagram of our linear regression thought process has been included below.
 
 ![Linear_Regression.PNG](Resources/Linear_Regression.PNG)
