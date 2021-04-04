@@ -27,12 +27,7 @@ For the Linear Regression model we have imported a new Folder into our main Repo
 ![QuickDBD_vaccination.PNG](Resources/QuickDBD_vaccination.PNG)
 
 
-### 4) X Role - Tyler Engalla
-- This team member will focus on the technology side of the project. They will consider the best tools to use for the project, what will be used in each section, and how each of these functions will flow together smoothly to provide a crisp result.
-
-#### X Role Work Done:
-
-For this role, there are several questions we must consider:
+Several other questions we considered were as follows:
 - Which tools are the best fit for our project?
 - What tool will be used for each section?
 
