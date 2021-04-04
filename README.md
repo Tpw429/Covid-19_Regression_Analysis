@@ -82,7 +82,7 @@ Given our strict timeline on this Covid-19 analysis, we would like to analyze ho
 
 ## Description of Data Exploration Phase
 
-1.Importing data from websites in csv and excel formats /n
+1.Importing data from websites in csv and excel formats 
 2. Cleaning data in Jupyter notebook using the following methods
 a. Checking Data Types
 b. Replace NaN by 0
