@@ -118,7 +118,7 @@ Limitations with this model would be around outliers having a huge effect that t
 
 Portraying results is important because it brings weight to our analysis. Images, interactive figures, Github, and Google Slides are all powerful tools which can help us share our findings to the masses. 
 
-Setting the stage for what we hope to accomplish by the end of the project, we will be setting forth a blueprint of what we hope to achieve. These ideas are shown below.
+Setting the stage for what we hope to accomplish by the end of the project, we will be setting forth a blueprint with a description of our elements of what we hope to achieve. These ideas are shown below.
 
 1) World Map - Our first chart will be an interactive map of the world with data for select countries. Based on filter selection, a tooltip will appear on hover-over to display that country’s name, population and  GDP, Health Data Index or total vaccinations rate.
 
@@ -126,4 +126,5 @@ Setting the stage for what we hope to accomplish by the end of the project, we w
 
 3) Heatmap -Another interesting idea we had was with heatmaps are trying to illustrate the covid hotspots throughout the world. This would be based on Covid-19 cases caught in a certain density.
 
-
+What tools will be used to create this dashboard?
+- For this project we plan to integrate several tools to create these visualizations. For the majority of the project we have been using Python to sift through our data. Therefore, it makes sense for us to create crisper images with Seaborn for a better user experience. In addition, for the world map we were thinking of using GeoJSON to make it an interactive experience with our user.
