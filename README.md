@@ -103,6 +103,11 @@ Given our strict timeline on this Covid-19 analysis, we would like to analyze ho
 
 We chose to perform Regression Analysis so that we can see how Vaccination Rates are either positively or negatively correlated with things like GDP, HDI, and Population. This would allow us to easily visualize this relationship and also give us an idea of how strongly they’re having an impact on Vaccinations within different countries. 
 
+For our Regression Analysis, there wasn’t a need to split the data for training and testing sets. However, we did split the data into our independent and dependent variables to see how one features affects or how correlated it is with the other. 
+Vaccination Rates was chosen as our dependent feature or data set, and GDP, HDI, and Population were chosen as our main independent features to see how they each affected Vaccination Rates. 
+
+
+
 
 ## The Database
 
