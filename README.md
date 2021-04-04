@@ -43,7 +43,7 @@ In our project, we will be analyzing if a country's GDP affects the rate at whic
 
 We will be collecting data from Kaggle around vaccination rates and combining that with GDP data gathered to apply to our linear regression model to answer questions such as how GDP affects vaccination rates and when we expect full vaccination or immunity within a country.
 
-## Data Source
+## Data Source and Description
 
 1. CDC Link: https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?name_desc=false
 2. Kaggle Data: https://www.kaggle.com/gpreda/covid-world-vaccination-progress
@@ -51,7 +51,23 @@ We will be collecting data from Kaggle around vaccination rates and combining th
 4. Our World In Data: https://github.com/owid/covid-19-data/tree/master/public/data
 5. UNDP data for hdi : http://hdr.undp.org/en/data
 
-These datasets include information about GDP, vaccations given, total vaccinations, vaccinations per day, country administered, date, and much more. These five data sources have been chosen based off accuracy, their input type, and completeness.
+These datasets include information about GDP, vaccations given, total vaccinations, vaccinations per day, country administered, date, and much more. These five data sources have been chosen based off accuracy, their input type, and completeness. Descriptions of our files are included below.
+
+1. country_gdp
+This file from world bank has GDP for all countries starting from year 1960 to 2019, Since we are using covid-19 data for the project we will use gdp from the year 2019.
+
+2. country_vaccinations
+This file from kaggle has vaccination data for all countries along with dates,As the vaccinations are still 
+in progress some countries have advanced towards some small percent of population considered fully vaccinated while some countries no not have any data.
+
+3. world_population
+This file from world bank has populations for all countries from year 1960 to 2019. As per project requirements we have used data only for the year 2019.This data is added to the gdp data file
+
+4. human_dev_index
+This file from UNITED NATIONS DEVELOPMENT PROGRAMME has human development index(HDI) for all countries along with Human Development Type which are required for the project
+
+5. Infection_Data
+This file from github repository has updated data from Our World in Data.This file has data about the infections rates,deaths, new case,hospitalization rate, testing dates for different countries.We have filtered the dataset as per project requirements and included data like total cases and total deaths. 
 
 ## Communication Protocols
 
