@@ -84,8 +84,8 @@ Given our strict timeline on this Covid-19 analysis, we would like to analyze ho
 
 1.Importing data from websites in csv and excel formats 
 2. Cleaning data in Jupyter notebook using the following methods
-a. Checking Data Types
-b. Replace NaN by 0
+	a. Checking Data Types
+	b. Replace NaN by 0
 	c. Removing Nan
 	d. Outlier detection with help of scatter plot
 	e. Editing column names by removing spaces 
