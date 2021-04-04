@@ -106,6 +106,9 @@ We chose to perform Regression Analysis so that we can see how Vaccination Rates
 For our Regression Analysis, there wasn’t a need to split the data for training and testing sets. However, we did split the data into our independent and dependent variables to see how one features affects or how correlated it is with the other. 
 Vaccination Rates was chosen as our dependent feature or data set, and GDP, HDI, and Population were chosen as our main independent features to see how they each affected Vaccination Rates. 
 
+For the Vaccination Data, we started by joining this Vaccination table with the GDP table on “country_name”. There were multiple months of dates, but we only needed one to perform the regression analysis. So we filtered to get the date that gave us the most countries tied to it with the least amount of null values across the features. Then we wanted to select the feature that gave us an idea at the rate countries were getting vaccinated, so we took “total_vaccination_per_hundred” and regressed it against other features such as GDP, HDI, Life Expectancy at Birth, and Population. We scaled the data, but found it wasn’t necessary for our regressions to take place or didn't add noticable optimization. 
+
+
 
 
 
