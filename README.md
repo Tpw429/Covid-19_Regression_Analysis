@@ -59,4 +59,7 @@ During this project, we will be using several forms of communication to make sur
 
 1. Slack - Sharing files and seeking team approvals
 2. Class breakout rooms - Discussing if the segment rubrics are met and checking progress for each member.
+3. Direct messaging with one another to make sure we are on the same page.
+4. Github merges into the main file, whilst always saving backups of the original
+5. Seeking team members approval on changes to main file
 
