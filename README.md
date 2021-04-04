@@ -102,3 +102,7 @@ Given our strict timeline on this Covid-19 analysis, we would like to analyze ho
 ## Machine Learning Model
 
 ## The Database
+
+## The Visualization Aspect
+
+Portraying results is important because it brings weight to our analysis. Figures, interactive images, Github and Google Slides are all powerful tools which can help us share our findings to the masses. 
