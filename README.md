@@ -101,6 +101,9 @@ Given our strict timeline on this Covid-19 analysis, we would like to analyze ho
 
 ## Machine Learning Model
 
+We chose to perform Regression Analysis so that we can see how Vaccination Rates are either positively or negatively correlated with things like GDP, HDI, and Population. This would allow us to easily visualize this relationship and also give us an idea of how strongly they’re having an impact on Vaccinations within different countries. 
+
+
 ## The Database
 
 ## The Visualization Aspect
