@@ -100,3 +100,5 @@ Given our strict timeline on this Covid-19 analysis, we would like to analyze ho
 ## Description of the Analysis Phase
 
 ## Machine Learning Model
+
+## The Database
