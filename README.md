@@ -43,6 +43,16 @@ In our project, we will be analyzing if a country's GDP affects the rate at whic
 
 We will be collecting data from Kaggle around vaccination rates and combining that with GDP data gathered to apply to our linear regression model to answer questions such as how GDP affects vaccination rates and when we expect full vaccination or immunity within a country.
 
+## Communication Protocols
+
+During this project, we will be using several forms of communication to make sure information is being administered to everyone.
+
+1. Slack - Sharing files and seeking team approvals
+2. Class breakout rooms - Discussing if the segment rubrics are met and checking progress for each member.
+3. Direct messaging with one another to make sure we are on the same page.
+4. Github merges into the main file, whilst always saving backups of the original
+5. Seeking team members approval on changes to main file
+
 ## Data Source and Description
 
 The data used in this project are included in the links below:
@@ -70,14 +80,4 @@ This file from UNITED NATIONS DEVELOPMENT PROGRAMME has human development index(
 
 5. Infection_Data
 This file from github repository has updated data from Our World in Data.This file has data about the infections rates,deaths, new case,hospitalization rate, testing dates for different countries.We have filtered the dataset as per project requirements and included data like total cases and total deaths. 
-
-## Communication Protocols
-
-During this project, we will be using several forms of communication to make sure information is being administered to everyone.
-
-1. Slack - Sharing files and seeking team approvals
-2. Class breakout rooms - Discussing if the segment rubrics are met and checking progress for each member.
-3. Direct messaging with one another to make sure we are on the same page.
-4. Github merges into the main file, whilst always saving backups of the original
-5. Seeking team members approval on changes to main file
 
