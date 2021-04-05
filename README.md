@@ -98,6 +98,25 @@ Given our strict timeline on this Covid-19 analysis, we would like to analyze ho
 6. Using the Data Frame for machine learning 
 
 ## Description of the Analysis Phase
+As data cleaning is the primary requirement for getting a perfect machine learning model we have incorporated the following methods for cleaning data in the individual files.For the project our main focus was to obtain data for GDP,HDI,population and people fully vaccinated for each country so that we can find relations between the data we have.Before sending the data to machine learning the data was cleaned, sent to postgres for storing and joining data as required.The data will help us determine the relation between HDI vs Total cases per million, HDI vs Population,GDP per Capita vs Total Cases per Million,Population Density vs Total Cases per Million,Median Age vs Total Deaths,Aged 70 or older vs Total Deaths,GDP vs Vaccination Rates,HDI vs Vaccincation Rates.
+In some columns the null values are droped because we require data for the respective countries and in some columns the null values were replaced by 0 as the model will not work with null values and 0 can be usefull in some cases.The column names were changed in some files to match the exact column name in other files as these are required for joining data in postgres.The required columns are kept and some unwanted were deleted,Outliers were determeined by plotting scatter plots and chaging the axis range accordingly.
+
+The below file have details about the tranformations done individually.
+
+1. country_gdp
+This file is downloaded from the worldbank.The NaN are replaced by 0, the column names are changed to match the schema in SQL, deleting columns and keeping only required columns.Saving the file country_master.csv to Cleaned Data folder.
+
+2. country_vaccinations
+This file is downloaded from kaggle. Dropping the NaN data as we need countries with available data only,changing names of columns to match schema in SQL,deleting columns and keeping only required columns,Saving the file vaccination_table.csv to Cleaned Data folder.
+
+3. world_population
+This file is downloaded from world bank.The only required data of population from 2019 is saved into country_master.csv using vlookup. 
+
+4. human_dev_index
+This file is downloaded from UNITED NATIONS DEVELOPMENT PROGRAMME.Changing names of columns to match schema in SQL, droping rows with null values.Saving the file human_dev_index.csv to Cleaned Data folder.
+
+5. Infection_Data
+This file from github repository has updated data from Our World in Data.Filtered data with date,changing names of columns to match schema in SQL,dropping null values.Checking outliers using scatter plot.Saving the file as Infection_Clean.csv to Cleaned Data folder 
 
 ## Machine Learning Model
 
@@ -111,10 +130,9 @@ For the Vaccination Data, we started by joining this Vaccination table with the 
 Limitations with this model would be around outliers having a huge effect that that skews our findings. As well, we’re only comparing two variables against each other at a time. So this gives us of an idea of the relationship between the two but it’s not a complete picture of the relationship and what else might be impacting it.
 
 
-
 ## Database Integration
 
-The following files are downloaded from the websites and cleaned in Jupyter notebook for the project. The population data for 2019 is added to the country_gdp.csv file using VLOOKUP. All these files are available in the Resources folder
+The following files are downloaded from the websites and cleaned in Jupyter notebook for the project. The population data for 2019 is added to the country_gdp.csv file using VLOOKUP. All these files are available in the [Resources folder][1]
 
 1. country_gdp.csv
 2. country_vaccinations.csv
@@ -122,7 +140,8 @@ The following files are downloaded from the websites and cleaned in Jupyter note
 4. Infection_Data
 5. world_population.csv
 
-The cleaned data files are sent from jupyter notebook using Pandas and Python libraries psycopg2 and sqlalchemy to pgadmin. All the cleaned data files are available in the Cleaned Data folder
+The cleaned data files are sent from jupyter notebook using Pandas and Python libraries psycopg2 and sqlalchemy to pgadmin. All the cleaned data files are available in the [Cleaned Data folder][2]
+
 1. country_master.csv
 2. vaccination_table.csv
 3. human_dev_index.csv
@@ -139,7 +158,7 @@ The following tables are created by joining the data from the above files
 2. gdp_vaccination_hdi
 3. country_group
 
-These joined tables are sent to jupyter notebook using Pandas and Python libraries psycopg2 and sqlalchemy to use further for machine learning.Snapshots of Database integration are available in the Database Integration folder.
+These joined tables are sent to jupyter notebook using Pandas and Python libraries psycopg2 and sqlalchemy to use further for machine learning.Snapshots of Database integration are available in the [Database Integration folder][3]
 
 
 ## The Visualization Aspect
@@ -156,3 +175,11 @@ Setting the stage for what we hope to accomplish by the end of the project, we w
 
 What tools will be used to create this dashboard?
 - For this project we plan to integrate several tools to create these visualizations. For the majority of the project we have been using Python to sift through our data. Therefore, it makes sense for us to create crisper images with Seaborn for a better user experience. In addition, for the world map we were thinking of using GeoJSON to make it an interactive experience with our user.
+
+## [Link to Presentation](https://docs.google.com/presentation/d/160j7slMeWWwnzbZd6SgaqRAt3yMQrFRDSncezrBMbZ0/edit?usp=sharing)
+
+[1]: https://github.com/Tpw429/Covid-19_Regression_Analysis/tree/main/Resources
+
+[2]: https://github.com/Tpw429/Covid-19_Regression_Analysis/tree/main/Cleaned%20Data
+
+[3]: https://github.com/Tpw429/Covid-19_Regression_Analysis/tree/main/Database_Integration
