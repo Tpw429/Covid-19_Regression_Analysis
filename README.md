@@ -185,5 +185,3 @@ What tools will be used to create this dashboard?
 [1]: https://github.com/Tpw429/Covid-19_Regression_Analysis/tree/main/Resources
 
 [2]: https://github.com/Tpw429/Covid-19_Regression_Analysis/tree/main/Cleaned%20Data
-
-[3]: https://github.com/Tpw429/Covid-19_Regression_Analysis/tree/main/Database_Integration
