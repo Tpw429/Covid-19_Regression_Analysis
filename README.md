@@ -112,7 +112,35 @@ Limitations with this model would be around outliers having a huge effect that t
 
 
 
-## The Database
+## Database Integration
+
+The following files are downloaded from the websites and cleaned in Jupyter notebook for the project. The population data for 2019 is added to the country_gdp.csv file using VLOOKUP. All these files are available in the Resources folder
+
+1. country_gdp.csv
+2. country_vaccinations.csv
+3. human_dev_index.csv
+4. Infection_Data
+5. world_population.csv
+
+The cleaned data files are sent from jupyter notebook using Pandas and Python libraries psycopg2 and sqlalchemy to pgadmin. All the cleaned data files are available in the Cleaned Data folder
+1. country_master.csv
+2. vaccination_table.csv
+3. human_dev_index.csv
+4. Infection_Clean.csv
+
+The Database stores static data that is sent from Jupyter notebook. The following files are stored in the pgadmin Database as tables. 
+
+1. country_master
+2. vaccination_table
+3. human_dev_index
+
+The following tables are created by joining the data from the above files
+1. gdp_vaccination_join
+2. gdp_vaccination_hdi
+3. country_group
+
+These joined tables are sent to jupyter notebook using Pandas and Python libraries psycopg2 and sqlalchemy to use further for machine learning.Snapshots of Database integration are available in the Database Integration folder.
+
 
 ## The Visualization Aspect
 
