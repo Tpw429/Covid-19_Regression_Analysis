@@ -1,0 +1,24 @@
+1. For creating table gdp_vaccination_join
+
+CREATE TABLE gdp_vaccination_join AS
+SELECT c.country_name , c.iso_code,date,total_vaccinations,people_vaccinated,people_fully_vaccinated,daily_vaccinations_raw,daily_vaccinations,total_vaccinations_per_hundred,people_vaccinated_per_hundred,people_fully_vaccinated_per_hundred,
+"indicator_name","indicator_code","GDP_2019","Population_2019"
+FROM country_master c
+INNER JOIN vaccination_table v
+ON (c.iso_code = v.iso_code)
+
+2. For creating table gdp_vaccination_hdi
+
+CREATE TABLE gdp_vaccination_hdi AS
+SELECT g.country_name ,iso_code,date,total_vaccinations,people_vaccinated,people_fully_vaccinated,daily_vaccinations_raw,daily_vaccinations,total_vaccinations_per_hundred,people_vaccinated_per_hundred,people_fully_vaccinated_per_hundred,
+"indicator_name","indicator_code","GDP_2019","Population_2019","HDI rank","Human Development Index HDI 2019","Life expectancy at birth 2019","Expected years of schooling 2019","Mean years of schoolingn 2019","Gross national income GNI per capita 2019","GNI per capita rank minus HDI rank 2019","HDI rank 2018"
+FROM gdp_vaccination_join g
+INNER JOIN human_dev_index h
+ON (g.country_name = h.country_name)
+
+3. For creating table country_group
+
+CREATE TABLE country_group AS
+SELECT country_name,iso_code,MAX("Population_2019")AS Population_2019,SUM (people_fully_vaccinated) AS people_fully_vaccinated,AVG ("GDP_2019")AS GDP_2019
+FROM gdp_vaccination_hdi
+GROUP BY country_name,iso_code
