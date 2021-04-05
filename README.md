@@ -53,6 +53,10 @@ During this project, we will be using several forms of communication to make sur
 4. Github merges into the main file, whilst always saving backups of the original
 5. Seeking team members approval on changes to main file
 
+## Project outline
+A flow chart to represent the project working
+![](https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/main/Database_Integration/project_outline.PNG)
+
 ## Data Source and Description
 
 The data used in this project are included in the links below:
