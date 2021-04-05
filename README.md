@@ -70,3 +70,44 @@ GDP Data: https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?name_desc=false
 Covid Vaccination Rate Data: https://www.kaggle.com/gpreda/covid-world-vaccination-progress
 
 These datasets include information about GDP, vaccations given, total vaccinations, vaccinations per day, country administered, date, and much more. These are just several of the variables that we will be taking during this project.
+
+Portion 2 Challenge: Circle - Thomas Watson 
+
+## Visualizations and Storyboard
+
+Portraying results is important because it brings weight to our analysis. Images, interactive figures, Github, and Google Slides are all powerful tools which can help us share our findings to the masses. 
+
+The first aspect of the Covid-19 analysis we were interested in reviewing was how case count stacked up against Countries GDP. We predicted that as GDP increased in countries total cases would decrease. We thought this would be the case because countries with more money would have access to better vaccines, masks, and hospital equipment. However, when we graphed it out the results showed the exact opposite! In fact, case counts per million rises substantially as GDP increases. We think these results might have been caused by countries with lower GDP not reporting cases or trading interactions substantially increase as GDP increases for a country.
+
+![GDPvscases.PNG](Resources/GDPvscases.PNG)
+
+This visualization gives us insight on the amount of vaccinations given to a particular country in comparison to their population. As you can see in certain countries, more shots have been administered than the total population size. Often times, lower population also correlates to a lower total country GDP. For this reason, as the slope of the line of this graph suggests, people may actually be safer in countries with a smaller population. This graph gives us insight into the graph we saw before about GDP vs. case count. Smaller and countries with a lower GDP may actually be a safer place to live!
+
+![VaccinationvsPop](Resources/VaccinationvsPop.PNG)
+
+One of the things we were quite interesting in exploring during this project was the relation between age and death rates. We believed the older the individual, the more likely you were to die of covid. To put this assumption to the test, we created a graph which shows how each year over 70 dramatically increases your chance of dying from covid. As you can see from the graph on the right, the slope of deaths per million people is pretty steep (around 85 more deaths per million each year over 70). 
+
+![70orolder.PNG](Resources/70orolder.PNG)
+
+Setting the stage for what we hope to accomplish by the end of the project, we will be setting forth a blueprint with a description of our elements of what we hope to achieve. These ideas are shown below.
+
+In the accompanying Storyboard linked below and attached as a PDF to our repo, we will use the following visualizations to tell the story of our data analysis and machine learning findings in the coming weeks.
+
+1) World Map - Our first chart will be an interactive map of the world with data for select countries. Based on filter selection, a tooltip will appear on hover-over to display that country’s name, population and  GDP, Health Data Index or total vaccinations rate.
+
+2) Bubble Chart - A drop-down menu will let the user select the top 10 countries by GDP,  bottom 10 countries by GDP or all countries. When the selection is made the bubble chart will update displaying countries as bubbles. The Y axis is population, the X axis is GDP and the size of the bubble is determined by total vaccinations per hundred.
+
+3) Heatmap -Another interesting idea we had was with heatmaps are trying to illustrate the covid hotspots throughout the world. This would be based on Covid-19 cases caught in a certain density.
+
+4) Finally, we will use static images of ML results to demonstrate the output of our ML models.
+
+What tools will be used to create this dashboard?
+- For this project we plan to integrate several tools to create these visualizations. For the majority of the project we have been using Python to sift through our data. Therefore, it makes sense for us to create crisper images with Seaborn for a better user experience. In addition, for the world map we were thinking of using GeoJSON to make it an interactive experience with our user. These are steps we plan to integrate in the next several weeks.
+
+## [Link to Presentation](https://docs.google.com/presentation/d/160j7slMeWWwnzbZd6SgaqRAt3yMQrFRDSncezrBMbZ0/edit?usp=sharing)
+
+[1]: https://github.com/Tpw429/Covid-19_Regression_Analysis/tree/main/Resources
+
+[2]: https://github.com/Tpw429/Covid-19_Regression_Analysis/tree/main/Cleaned%20Data
+
+[3]: https://github.com/Tpw429/Covid-19_Regression_Analysis/tree/main/Database_Integration
