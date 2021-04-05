@@ -183,7 +183,7 @@ One of the things we were quite interesting in exploring during this project was
 
 Setting the stage for what we hope to accomplish by the end of the project, we will be setting forth a blueprint with a description of our elements of what we hope to achieve. These ideas are shown below.
 
-In the accompanying Storyboard linked below and attached as a PDF to our repo, we will use the following visualizations to tell the story of our data analysis and machine learning findings in the coming weeks.
+In the Storyboard we plan to use the following visualizations to add value to our final project.
 
 1) World Map - Our first chart will be an interactive map of the world with data for select countries. Based on filter selection, a tooltip will appear on hover-over to display that country’s name, population and  GDP, Health Data Index or total vaccinations rate.
 
