@@ -165,7 +165,7 @@ The following tables are created by joining the data from the above files
 These joined tables are sent to jupyter notebook using Pandas and Python libraries psycopg2 and sqlalchemy to use further for machine learning.Snapshots of Database integration are available in the [Database Integration folder][3]
 
 
-## Visualizations and Storyboard
+## Visualizations, Storyboard, and Dashboard
 
 Portraying results is important because it brings weight to our analysis. Images, interactive figures, Github, and Google Slides are all powerful tools which can help us share our findings to the masses. 
 
@@ -195,6 +195,13 @@ In the accompanying Storyboard linked below and attached as a PDF to our repo, w
 
 What tools will be used to create this dashboard?
 - For this project we plan to integrate several tools to create these visualizations. For the majority of the project we have been using Python to sift through our data. Therefore, it makes sense for us to create crisper images with Seaborn for a better user experience. In addition, for the world map we were thinking of using GeoJSON to make it an interactive experience with our user. These are steps we plan to integrate in the next several weeks.
+
+Blueprint for Dashboard
+
+- We plan to make our Dashbaord browser based.
+- We will build it using D3.js with the buildcharts() function.
+- Use JavaScript to populate and read a drop-down menu selection and update a bubble chart.
+- Deploy our project to GitHub Pages
 
 ## [Link to Presentation](https://docs.google.com/presentation/d/160j7slMeWWwnzbZd6SgaqRAt3yMQrFRDSncezrBMbZ0/edit?usp=sharing)
 
