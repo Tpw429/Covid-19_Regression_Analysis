@@ -23,53 +23,21 @@
         <p style="color:rgb(253, 252, 250);"> Explore what factors have played a part in Vaccination and Infection rates of Covid-19</p>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-2">
-        <div class="well">
-          <h5>Explore Regressions of Covid-19:</h5>
-          
-          <select id="selDataset"></select>
-          <select id="selDataset" onchange="optionChanged(this.value)"></select>
-        </div>
+    <div class="well">
+      <h5>Explore How These Variables Have Impacted the Vaccination Rates:</h5>
 
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h3 class="panel-title">Regression Info</h3>
-          </div>
-          <div id="sample-metadata" class="panel-body"></div>
-        </div>
-      </div>
-      <div class="col-md-5">
-        <div id="bar"></div>
-      </div>
-      <div class="col-md-5">
-        <div id="gauge"></div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <div id="mapid"></div>
-      </div>
-    </div>
+      <select id="selDataset" onchange="optionChanged(this.value)">
+        <option value=GDP>GDP</option>
+        <option value="Resources/image2.PNG">HDI</option>
+        <option value="Resources/image3.PNG">Population</option>
+        <option value="Resources/image3.PNG">Life Expectancy</option>
+        <option value="Resources/image3.PNG">HDI Rank</option>
+    
+    
+    <img id = "GDP" src="Images/GDP_vs_VaccinationRate.png" />
+    <img src="Images/HDI_vs_VaccinationRate.png" />
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="charts.js"></script>
-
-
-
-     <!-- Leaflet JavaScript -->
-     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-     crossorigin=""></script>
-  
-     <!--  API key -->
-     <script type='text/javascript' src='static/js/config.js'></script>
-  
-     <!-- Our JavaScript -->
-     <!-- <script type='text/javascript' src='static/js/cities.js'></script> -->
-     <script type='text/javascript' src='static/js/challenge_logic.js'></script>
 
 </body>
 
