@@ -27,9 +27,13 @@
       <div class="col-md-2">
         <div class="well">
           <h5>Explore Regressions of Covid-19:</h5>
-          
-          <select id="selDataset"></select>
-          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+          <select id="selDataset" onchange="optionChanged(this.value)">
+            <select id="selDataset" onchange="optionChanged(this.value)">
+              <option value="Resources/gdp.png">GDP</option>
+              <option value="Resources/hdi.png">HDI</option>
+              <option value="Resources/population.png">Population</option>
+          </div>
+          </select>
         </div>
 
         <div class="panel panel-primary">
