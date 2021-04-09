@@ -1,4 +1,4 @@
-# Final Project Overview
+# Covid-19 Regression Analysis
 
 Covid-19 is a global pandemic which has rocked our society to its core. It has caused massive fatality, increased unemployment across the nation, and shutdown travel in many parts of the world. We have decided that as a team we will be analyzing Covid-19 data because of its relevance in everyday life around us. It has affected our health, our jobs, and our way of life. Over the next few weeks, our team will be focused on recognizing and analyzing trends due to covid-19. The team members of this project include: Akshaya Kamble, Ray Hunt, Thomas Watson, and Tyler Engalla. Throughout the project we will be collaborting and working with one another to divide and conquer the full affects of this pandemic.
 
@@ -53,6 +53,10 @@ During this project, we will be using several forms of communication to make sur
 4. Github merges into the main file, whilst always saving backups of the original
 5. Seeking team members approval on changes to main file
 
+## Project outline
+A flow chart to represent the project working
+![](https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/main/Database_Integration/project_outline.PNG)
+
 ## Data Source and Description
 
 The data used in this project are included in the links below:
@@ -78,7 +82,7 @@ in progress some countries have advanced towards some small percent of populatio
 
 ## Questions we Hope to Answer
 
-Given our strict timeline on this Covid-19 analysis, we would like to analyze how certain attributes such as age, Gross Domestic Product (GDP), Human Development Index (HDI), and population directly impact the spread of Covid-19. If time allows, we would also be interesting in creating a model to help us predict the spread of Covid-19 in the future. In addition, by the end of the project our visuals should be extremely user friendly and portray an effective message.
+Given our strict timeline on this Covid-19 analysis, we would like to analyze how certain attributes such as age, Gross Domestic Product (GDP), Human Development Index (HDI), and population directly impact the spread of Covid-19. If time allows, we would also be interested in creating a model to help us predict the spread of Covid-19 in the future. In addition, by the end of the project our visuals should be extremely user friendly and portray an effective message.
 
 ## Description of Data Exploration Phase
 1. Importing data from websites in csv and excel formats
@@ -120,12 +124,15 @@ This file from github repository has updated data from Our World in Data.Filtere
 
 ## Machine Learning Model
 
-We chose to perform Regression Analysis so that we can see how Vaccination Rates are either positively or negatively correlated with things like GDP, HDI, and Population. This would allow us to easily visualize this relationship and also give us an idea of how strongly they’re having an impact on Vaccinations within different countries. 
+We are trying to find the relationship between two or more continuous variables. In our case, how does GDP, HDI, and Population have an impact on Covid Vaccination Rates and Infection Rates. 
 
-For our Regression Analysis, there wasn’t a need to split the data for training and testing sets. However, we did split the data into our independent and dependent variables to see how one features affects or how correlated it is with the other. 
-Vaccination Rates was chosen as our dependent feature or data set, and GDP, HDI, and Population were chosen as our main independent features to see how they each affected Vaccination Rates. 
+We chose a supervised machine learning model because our data has labels (this is GDP, HDI, Population) and it’s learning based on those input values what the output of Covid Vaccination Rate and Infection Rate might be. 
 
-For the Vaccination Data, we started by joining this Vaccination table with the GDP table on “country_name”. There were multiple months of dates, but we only needed one to perform the regression analysis. So we filtered to get the date that gave us the most countries tied to it with the least amount of null values across the features. Then we wanted to select the feature that gave us an idea at the rate countries were getting vaccinated, so we took “total_vaccination_per_hundred” and regressed it against other features such as GDP, HDI, Life Expectancy at Birth, and Population. We scaled the data, but found it wasn’t necessary for our regressions to take place or didn't add noticable optimization. 
+Regression analysis is a reliable method of identifying which variables have an impact on our topic of interest and gives us the ability to easily visualize that relationship with scatter plots and a best fit line. 
+
+This model allows us to confidently determine which of these factors (GDP, HDI, Population) had the biggest impact, or had the largest influence on our dependent variables (Covid Vaccination Rates and Infection Rates).
+
+For the Vaccination Data, we started by joining the Vaccination table with the GDP table on “country_name”. There were multiple months of dates, but we only needed one to perform the regression analysis. So we filtered to get the date that gave us the most countries tied to it with the least amount of null values across the features. Then we wanted to select the feature that gave us an idea at the rate countries were getting vaccinated, so we took “total_vaccination_per_hundred” and regressed it against other features such as GDP, HDI, Life Expectancy at Birth, and Population. We scaled the data, but found it wasn’t necessary for our regressions to take place or didn't add noticable optimization. 
 
 Limitations with this model would be around outliers having a huge effect that that skews our findings. As well, we’re only comparing two variables against each other at a time. So this gives us of an idea of the relationship between the two but it’s not a complete picture of the relationship and what else might be impacting it.
 
@@ -161,11 +168,25 @@ The following tables are created by joining the data from the above files
 These joined tables are sent to jupyter notebook using Pandas and Python libraries psycopg2 and sqlalchemy to use further for machine learning.Snapshots of Database integration are available in the [Database Integration folder][3]
 
 
-## The Visualization Aspect
+## Visualizations, Storyboard, and Dashboard
 
 Portraying results is important because it brings weight to our analysis. Images, interactive figures, Github, and Google Slides are all powerful tools which can help us share our findings to the masses. 
 
+The first aspect of the Covid-19 analysis we were interested in reviewing was how case count stacked up against Countries GDP. We predicted that as GDP increased in countries total cases would decrease. We thought this would be the case because countries with more money would have access to better vaccines, masks, and hospital equipment. However, when we graphed it out the results showed the exact opposite! In fact, case counts per million rises substantially as GDP increases. We think these results might have been caused by countries with lower GDP not reporting cases or trading interactions substantially increase as GDP increases for a country.
+
+![GDPvscases.PNG](Resources/GDPvscases.PNG)
+
+This visualization gives us insight on the amount of vaccinations given to a particular country in comparison to their population. As you can see in certain countries, more shots have been administered than the total population size. Often times, lower population also correlates to a lower total country GDP. For this reason, as the slope of the line of this graph suggests, people may actually be safer in countries with a smaller population. This graph gives us insight into the graph we saw before about GDP vs. case count. Smaller and countries with a lower GDP may actually be a safer place to live!
+
+![VaccinationvsPop](Resources/VaccinationvsPop.PNG)
+
+One of the things we were quite interesting in exploring during this project was the relation between age and death rates. We believed the older the individual, the more likely you were to die of covid. To put this assumption to the test, we created a graph which shows how each year over 70 dramatically increases your chance of dying from covid. As you can see from the graph on the right, the slope of deaths per million people is pretty steep (around 85 more deaths per million each year over 70). 
+
+![70orolder.PNG](Resources/70orolder.PNG)
+
 Setting the stage for what we hope to accomplish by the end of the project, we will be setting forth a blueprint with a description of our elements of what we hope to achieve. These ideas are shown below.
+
+In the Storyboard we plan to use the following visualizations to add value to our final project.
 
 1) World Map - Our first chart will be an interactive map of the world with data for select countries. Based on filter selection, a tooltip will appear on hover-over to display that country’s name, population and  GDP, Health Data Index or total vaccinations rate.
 
@@ -173,10 +194,19 @@ Setting the stage for what we hope to accomplish by the end of the project, we w
 
 3) Heatmap -Another interesting idea we had was with heatmaps are trying to illustrate the covid hotspots throughout the world. This would be based on Covid-19 cases caught in a certain density.
 
-What tools will be used to create this dashboard?
-- For this project we plan to integrate several tools to create these visualizations. For the majority of the project we have been using Python to sift through our data. Therefore, it makes sense for us to create crisper images with Seaborn for a better user experience. In addition, for the world map we were thinking of using GeoJSON to make it an interactive experience with our user.
+4) Finally, we will use static images of ML results to demonstrate the output of our ML models.
 
-## [Link to Presentation](https://docs.google.com/presentation/d/160j7slMeWWwnzbZd6SgaqRAt3yMQrFRDSncezrBMbZ0/edit?usp=sharing)
+What tools will be used to create this dashboard?
+- For this project we plan to integrate several tools to create these visualizations. For the majority of the project we have been using Python to sift through our data. Therefore, it makes sense for us to create crisper images with Seaborn for a better user experience. In addition, for the world map we were thinking of using GeoJSON to make it an interactive experience with our user. These are steps we plan to integrate in the next several weeks.
+
+Blueprint for Dashboard
+
+- We plan to make our Dashbaord browser based.
+- We will build it using D3.js with the buildcharts() function.
+- Use JavaScript to populate and read a drop-down menu selection and update a bubble chart.
+- Deploy our project to GitHub Pages
+
+## [Google Slides Covid-19 Regression Analysis Presentation](https://docs.google.com/presentation/d/160j7slMeWWwnzbZd6SgaqRAt3yMQrFRDSncezrBMbZ0/edit?usp=sharing)
 
 [1]: https://github.com/Tpw429/Covid-19_Regression_Analysis/tree/main/Resources
 
