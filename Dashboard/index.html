@@ -23,21 +23,30 @@
         <p style="color:rgb(253, 252, 250);"> Explore what factors have played a part in Vaccination and Infection rates of Covid-19</p>
       </div>
     </div>
-    <div class="well">
-      <h5>Explore How These Variables Have Impacted the Vaccination Rates:</h5>
+ 
 
-      <select id="selDataset" onchange="optionChanged(this.value)">
-        <option value=GDP>GDP</option>
-        <option value="Resources/image2.PNG">HDI</option>
-        <option value="Resources/image3.PNG">Population</option>
-        <option value="Resources/image3.PNG">Life Expectancy</option>
-        <option value="Resources/image3.PNG">HDI Rank</option>
+<div class="well">
+  <h5>Explore How These Variables Have Impacted the Vaccination Rates:</h5>
+
+<select id="imageList">
+      <option value="Please Select A Pokemon">Please Select:</option>
+      <option value="GDP">GDP</option>
+      <option value="HDI">HDI</option>
+      <option value="HDI_Rank">HDI Rank</option>
+      <option value="Life_Expectancy">Life Expectancy</option>
+      <option value="Population">Population</option>
+
+</select>
+<br>
+<br>
+<br>
+<img id="image" />
+
+
     
-    
-    <img id = "GDP" src="Images/GDP_vs_VaccinationRate.png" />
-    <img src="Images/HDI_vs_VaccinationRate.png" />
   </div>
 
+  <script type='text/javascript' src='Image.js'></script>
 
 </body>
 
