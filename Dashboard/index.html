@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Covid-19 Regression Analysis</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<style>
+  body {
+    /* color: rgb(220, 220, 230); */
+    /* background: radial-gradient(circle at bottom, navy 0, black 100%); */
+  }
+  </style>
+  <body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center" style = "background-image: url('https://sshs-web.s3.amazonaws.com/www.southshorehealth.org/assets/styles/responsive_image/s3/2020-03/covid-19-virus.jpg?h=3a03a1a6&itok=GwhEGxuO')">
+        <h1 style="color:rgb(253, 252, 250);"> Covid-19 Regression Analysis </h1>
+        <p style="color:rgb(253, 252, 250);"> Explore what factors have played a part in Vaccination and Infection rates of Covid-19</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Explore Regressions of Covid-19:</h5>
+          
+          <select id="selDataset"></select>
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Regression Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="bar"></div>
+      </div>
+      <div class="col-md-5">
+        <div id="gauge"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div id="mapid"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="charts.js"></script>
+
+
+
+     <!-- Leaflet JavaScript -->
+     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+     crossorigin=""></script>
+  
+     <!--  API key -->
+     <script type='text/javascript' src='static/js/config.js'></script>
+  
+     <!-- Our JavaScript -->
+     <!-- <script type='text/javascript' src='static/js/cities.js'></script> -->
+     <script type='text/javascript' src='static/js/challenge_logic.js'></script>
+
+</body>
+
+</html>
+
