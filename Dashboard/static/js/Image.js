@@ -1,6 +1,6 @@
 var images = {
     GDP:
-        "Images/GDP_vs_VaccinationRate.png",
+        "Images/GDP_vs_VaccinationRate.png", 
     HDI:
         "Images/HDI_vs_VaccinationRate.png",
     HDI_Rank:
@@ -11,6 +11,7 @@ var images = {
         "Images/Population_vs_VaccinationRate.png",
     
 };
+
 var changeImage = function() {
     const value = this.options[this.selectedIndex].value;
     var imageURL = images[value];
@@ -18,6 +19,7 @@ var changeImage = function() {
 };
 
 var imageList = document.getElementById("imageList");
-imageList.addEventListener("change", changeImage, false);
+imageList.addEventListener("change", changeImage, changeDefinition, false);
 
 document.getElementById("image").src = images["default"];
+
