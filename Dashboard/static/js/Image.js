@@ -19,7 +19,7 @@ var changeImage = function() {
 };
 
 var imageList = document.getElementById("imageList");
-imageList.addEventListener("change", changeImage, changeDefinition, false);
+imageList.addEventListener("change", changeImage, false);
 
 document.getElementById("image").src = images["default"];
 
