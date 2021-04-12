@@ -4,10 +4,44 @@ console.log("working");
 // Create the map object with a center and zoom level.
 let map = L.map('mapid').setView([31.046051, 34.851612], 2);
 
+// We create the tile layer for street view
+let streets = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+attribution: 'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    accessToken: API_KEY
+});
+
+//Create second tile layer for dark view
+let dark = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/dark-v10/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
+	maxZoom: 18,
+	accessToken: API_KEY
+});
+
+// Create a base layer that holds two maps.
+let baseMaps = {
+  "Streets": streets,
+  "Dark" : dark
+};
+
+// Add a 2nd layer group for the People fully vaccinated
+let alldata = new L.LayerGroup();
+
+// Add a reference to the People fully vaccinated to the overlays object.
+let overlays = {
+  "People fully vaccinated": alldata,
+};
+
+// Add dark map as default map
+dark.addTo(map);
+
+// Add a control to the map that will allow the user to change which layers are visible.
+L.control.layers(baseMaps, overlays).addTo(map);
+
 // Get data from country_lat_lan.js
 let data = country_lat_lan;
 
-// Loop through the cities array and create one marker for each city.
+// Loop through the countries array and create one marker for each city.
 data.forEach(function(country) {
     // console.log(country)
     L.circleMarker(country.location,{
@@ -20,9 +54,11 @@ data.forEach(function(country) {
     },
     )
     .bindPopup("<h2>"+ country.country_name+ "</h2> <hr> <h3> People Fully vaccinated :" + country.people_fully_vaccinated.toLocaleString() + "</h3>")
-    .addTo(map);
+    .addTo(alldata);
 
- })
+     })
+  // Then we add the earthquake layer to our map.
+  alldata.addTo(map);
 
  // This function determines the color of the marker based on people fully vaccinated
  function getColor(people_fully_vaccinated) {
@@ -45,26 +81,22 @@ data.forEach(function(country) {
     return "#000080";
   } 
     
-// We create the tile layer that will be the background of our map.
-let streets = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-attribution: 'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 18,
-    accessToken: API_KEY
-})
-// Then we add our 'graymap' tile layer to the map.
-streets.addTo(map);
+
 
 // Here we create a legend control object.
 let legend = L.control({
-    position: "bottomright"
+    position: "bottomright",
+    title: " My Legend"
   });
+  
   
   // Then add all the details for the legend
   legend.onAdd = function() {
     let div = L.DomUtil.create("div", "info legend");
-  
+    
     const people_fully_vaccinated = [100000, 1000000, 10000000, 100000000, 100000000, 1000000000];
     const colors = [
+      
       "#000080",
       "#0000FF",
       "#FF4500",
