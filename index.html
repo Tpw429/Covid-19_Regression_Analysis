@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 Regression Analysis</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin=""/>
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  </head>
+
+<body>
+    <div class="container">
+          <div class="col-md-12 jumbotron text-center" 
+              style = "background-size: cover; background-position: center center; 
+              background-image: 
+              url('https://sshs-web.s3.amazonaws.com/www.southshorehealth.org/assets/styles/responsive_image/s3/2020-03/covid-19-virus.jpg?h=3a03a1a6&itok=GwhEGxuO')">
+            <h1 style="color:rgb(253, 252, 250);"> Covid-19 Regression Analysis </h1>
+          </div>
+            
+      <!-- Section for Title Instructions -->
+        <div class="row">
+          <div class ="col-md-12">
+            <h3>Explore How A Country's GDP, HDI, Life Expectancy, and Population Have Impacted their Vaccination Rates:</h3>
+          </div>
+        </div>
+      <!-- Section for Drop Menu -->
+        <div class = "row" id = "drop down bar">
+          <div class = "col-md-12">
+            <select id="imageList">
+              <option value="Please Select A Regresion">Please Select:</option>
+              <option value="GDP">GDP</option>
+              <option value="HDI">HDI</option>
+              <option value="HDI_Rank">HDI Rank</option>
+              <option value="Life_Expectancy">Life Expectancy</option>
+              <option value="Population">Population</option>
+            </select>
+            <br>
+            <br>
+            <br>
+          </div>
+        </div>
+        <!-- Section for Regression Images -->
+        <div class = "row">
+          <div class="col-md-6">
+            <img id="image"/>
+              <style>
+                #image {
+                  width: 500px;
+                  height:400px;
+                }
+              </style>
+          </div>
+           
+      <!-- Section for Summary -->
+          <div class ="col-md-6">
+            <p>
+              We analyzed 41 different countries that had each of these data points available below from 2019 (With Covid in full effect in 2020, we thought taking the data from 2019 would prove more accurate, specifically around GDP). With each regression analysis, you'll notice we observed the relationship between these variables against Total Vaccinations per 100 (This is tracked and logged daily). We selected to use data from 3/18/2021 as it was the day most countries had logged the amount of vaccinations given.
+            </p>
+          <br>
+        </div>
+      </div>
+
+
+        <!-- Section for Definitions -->
+        <div class = "row" id="definitions">
+          <div class ="col-md-12"></div>
+            <h3>Definitions</h3>
+            <li>Total vaccinations per hundred - ratio (in percent) between vaccination number and total population up to the date in the country.</li>
+            <br>
+            <li>GDP - Gross Domestic Product is the total monetary or market value of all the finished goods and serviced produced within a country's borders in a specific time period. As a broad measure of overall domestic production, it functions as a comprehensive scorecard of a given country's economic health.</li>
+            <br>
+            <li>HDI - Human Development Index is a statistic developed and compiled by the United Nations to measure and various countries' level of social and economic development. It is composed of four principal areas of interests: mean years of schooling, expected years of schooling, life expectancy at birth, and gross national incomer per capita. This index is a tool used to follow changes in development levels over time and to compare the development levels of different countries.</li>
+            <br>
+            <li>HDI Rank - Based on the HDI index score, with the highest ranking 1 overall, where do the countries stack up against eachother.</li>
+            <br>
+            <li>Life Expectancy - statiscal age that a person is expected to live until, based on acturial data.</li> 
+            <br>
+            <li>Population - distinct group of individuals, whether that group comprises a nation or a group of people with a common characteristic.</li> 
+        </div>
+
+      <!-- Section for Vaccination Map -->
+      <h3> People Fully Vaccinated in each country</h3>
+      <!-- The div that holds our map -->
+      <div id="mapid"></div>
+
+      <!-- Leaflet JavaScript -->
+      <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+      crossorigin=""></script>
+      
+          <style>
+              #mapid {
+                  width: 1100px;
+                  height: 400px;
+                  border: 1px solid #ccc;
+              }
+      
+              .leaflet-container {
+                  background: #fff;
+              }
+            </style>    
+    </div>
+      <!-- Our Dropdown Javscript -->
+      <script type='text/javascript' src='Image.js'></script>
+      <script type='text/javascript' src='definition.js'></script>
+
+      <!-- API key -->
+      <script type="text/javascript" src="static/js/config.js"></script>
+
+      <!-- Our data JavaScript -->
+      <script type="text/javascript" src="static/js/country_lat_lan.js"></script>
+
+      <!-- Our image JavaScript -->
+      <script type="text/javascript" src="static/js/Image.js"></script>
+
+      <!-- Our JavaScript -->
+      <script type="text/javascript" src="static/js/logic.js"></script>
+
+  </body>
+</html>
