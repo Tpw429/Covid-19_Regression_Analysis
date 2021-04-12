@@ -2,7 +2,7 @@
 
 ## Dashboard
 Please visit our dashboard to review our analytic and Machine Learning results:
-[insert gitpages link here]
+[https://github.com/Tpw429/Covid-19_Regression_Analysis]
 
 ## Roster
 The team members of this project include: Akshaya Kamble, Ray Hunt, Thomas Watson, and Tyler Engalla.
