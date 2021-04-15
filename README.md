@@ -65,7 +65,7 @@ A flow chart to represent the project working
 
 The data used in this project are included in the links below:
 
-1. CDC Link: https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?name_desc=false
+1. CDC Link: https://covid.cdc.gov/covid-data-tracker/#datatracker-home 
 2. Kaggle Data: https://www.kaggle.com/gpreda/covid-world-vaccination-progress
 3. World Bank Data: https://data.worldbank.org/indicator/NY.GDP.MKTP.CD
 4. Our World In Data: https://github.com/owid/covid-19-data/tree/master/public/data
