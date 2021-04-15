@@ -73,12 +73,12 @@ The data used in this project are included in the links below:
 
 These five data sources have been chosen based off accuracy, their input type, and completeness. Descriptions of our files are included below.
 
-1. country_gdp - This file from world bank has GDP for all countries starting from year 1960 to 2019, Since we are using covid-19 data for the project we will use gdp from the year 2019.
+1. country_gdp - This file from world bank has GDP for all countries starting from year 1960 to 2019, since we are using covid-19 data for the project we will use gdp from the year 2019.
 
-2. country_vaccinations - This file from kaggle has vaccination data for all countries along with dates,As the vaccinations are still 
+2. country_vaccinations - This file from kaggle has vaccination data for all countries along with dates, as the vaccinations are still 
 in progress some countries have advanced towards some small percent of population considered fully vaccinated while some countries no not have any data.
 
-3. world_population - This file from world bank has populations for all countries from year 1960 to 2019. As per project requirements we have used data only for the year 2019.This data is added to the gdp data file
+3. world_population - This file from world bank has populations for all countries from year 1960 to 2019. As per project requirements we have used data only for the year 2019.This data is added to the gdp data file.
 
 4. human_dev_index - This file from UNITED NATIONS DEVELOPMENT PROGRAMME has human development index(HDI) for all countries along with Human Development Type which are required for the project
 
