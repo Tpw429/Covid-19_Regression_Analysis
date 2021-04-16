@@ -1,9 +1,5 @@
 # Covid-19 Regression Analysis
 
-## Dashboard
-Please visit our dashboard to review our analytic and Machine Learning results:
-[https://tpw429.github.io/Covid-19_Regression_Analysis/]
-
 ## Roster
 The team members of this project include: Akshaya Kamble, Ray Hunt, Thomas Watson, and Tyler Engalla.
 
@@ -23,9 +19,7 @@ In the first week of the project, we had to make decisions on which technologies
 
 For the final project we have selected Supervised Machine learning because the the input data is known (Gross Domestic Product, Human Development Index, population and demographic data) and a desired output (vaccination rate). We selected a Linear Regression model to analyze data from Covid Vaccinations and GDP of all countries because it provides us with predictive capabilities instead of a classification model.
 
-Using continuous data we will identify the relation between data and make predictions regarding the vaccination rate for a country. A diagram of our linear regression thought process has been included below.
-
-![Linear_Regression.PNG](Resources/Linear_Regression.PNG)
+Using continuous data we will identify the relation between data and make predictions regarding the vaccination rate for a country. A diagram of our linear regression thought process [Link is here][4]
 
 Using quickdatabasedesigns.com we created a conceptual design for our mockup database that includes two tables. The first is the master_country table that stores the following columns iso_code (primary key), country_name, population, gdp. The second table will store the vaccination data by country. The results of our conceptual diagram is shown below.
 
@@ -168,7 +162,7 @@ The following tables are created by joining the data from the above files
 These joined tables are sent to jupyter notebook using Pandas and Python libraries psycopg2 and sqlalchemy to use further for machine learning.Snapshots of Database integration are available in the [Database Integration folder][3]
 
 
-## Visualizations, Storyboard, and Dashboard
+## Visualizations and Storyboard
 
 Portraying results is important because it brings weight to our analysis. Images, interactive figures, Github, and Google Slides are all powerful tools which can help us share our findings to the masses. 
 
@@ -199,12 +193,28 @@ In the Storyboard we plan to use the following visualizations to add value to ou
 What tools will be used to create this dashboard?
 - For this project we plan to integrate several tools to create these visualizations. For the majority of the project we have been using Python to sift through our data. Therefore, it makes sense for us to create crisper images with Seaborn for a better user experience. In addition, for the world map we were thinking of using GeoJSON to make it an interactive experience with our user. These are steps we plan to integrate in the next several weeks.
 
-Blueprint for Dashboard
+## Dashboard
+Please visit our dashboard to review our analytic and Machine Learning results:
+[Dashboard Link](https://tpw429.github.io/Covid-19_Regression_Analysis/)
 
-- We plan to make our Dashbaord browser based.
-- We will build it using D3.js with the buildcharts() function.
-- Use JavaScript to populate and read a drop-down menu selection and update a bubble chart.
-- Deploy our project to GitHub Pages
+### The dashboard is built using the following technologies
+- HTML
+- Python Libraries -plotly,hvplot,matplotlib
+- Javascript Libraries - Leaflet and D3.js
+- The dashboard is deployed on GitHub Pages
+
+### Interactivity of our Dashboard
+
+- Interactive drop down menu pulls titles (GDP,HDI,HDI rank,Life Expectancy and Population) from a list
+- After selection of a menu item, the respective image is displayed below.
+- Information about the drop down menu items is displayed in a paragraph below the image.
+- Next below we have an Interactive map
+- Map displays information about people fully vaccinated with different color and size cirles plotted on each country.
+- A pop up displays country and population
+- An index of the population range is available on the down right corner
+- The map can toggle between street and dark view
+- Right now we have only one feature (people fully vaccinated) seen on the map, but for future we can add more features for selection.
+
 
 ## [Google Slides Covid-19 Regression Analysis Presentation](https://docs.google.com/presentation/d/1JQeOwovcKA4-0dyTTak2V6hE9sy4mft0BnIYaICz5B4/edit?usp=sharing)
 
@@ -213,3 +223,5 @@ Blueprint for Dashboard
 [2]: https://github.com/Tpw429/Covid-19_Regression_Analysis/tree/main/Cleaned%20Data
 
 [3]: https://github.com/Tpw429/Covid-19_Regression_Analysis/tree/main/Database_Integration
+
+[4]: https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/main/Resources/Linear_Regression.PNG
