@@ -162,7 +162,7 @@ Since we see a relation between our independent and dependent variable we contin
 
 ### How model was trained
 We considered training data with single and multiple variables. Also changed the train test ratio. The following models below have the best scores for r2 values and variance.
-The best model was GDP,Population, HDI rank vs people vaccinated with test_size=0.2 which gave r2 score 70% and variance 73%. The python file Link is here
+The best model was GDP,Population, HDI rank vs people vaccinated with test_size=0.2 which gave r2 score 70% and variance 73%. The python file for machine learning[Link is here][11]
 
 - GDP vs People_vaccinated r2 score 68% and variance 70%
 - GDP,Population vs people vaccinated r2 score 69% and variance 73%
@@ -299,3 +299,5 @@ Please visit our dashboard to review our analytic and Machine Learning results:
 [9]: https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/main/Database_Integration/create_table_country_group.PNG
 
 [10]: https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/Akshaya/Segment4/Images/pairplot_gdp_vaccination_hdi.png
+
+[11]: https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/Akshaya/Segment4/Machine_Learning_1/Machine_Learning_Final.ipynb
