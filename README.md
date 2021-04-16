@@ -206,7 +206,7 @@ Blueprint for Dashboard
 - Use JavaScript to populate and read a drop-down menu selection and update a bubble chart.
 - Deploy our project to GitHub Pages
 
-## [Google Slides Covid-19 Regression Analysis Presentation](https://docs.google.com/presentation/d/160j7slMeWWwnzbZd6SgaqRAt3yMQrFRDSncezrBMbZ0/edit?usp=sharing)
+## [Google Slides Covid-19 Regression Analysis Presentation](https://docs.google.com/presentation/d/1JQeOwovcKA4-0dyTTak2V6hE9sy4mft0BnIYaICz5B4/edit?usp=sharing)
 
 [1]: https://github.com/Tpw429/Covid-19_Regression_Analysis/tree/main/Resources
 
