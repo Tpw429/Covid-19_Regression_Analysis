@@ -14,17 +14,14 @@ Aside from vaccine avialability, what factors impact the vaccination rate of a g
 
 We will analyze how certain attributes such as  Gross Domestic Product (GDP), Human Development Index (HDI), and population directly impact the spread of Covid-19 and the vaccination rate.
 
-## Getting Started
+## Initial Analysis
 In the first week of the project, we had to make decisions on which technologies would be used to help us analyze Covid-19 data. 
 
 For the final project we have selected Supervised Machine learning because the the input data is known (Gross Domestic Product, Human Development Index, population and demographic data) and a desired output (vaccination rate). We selected a Linear Regression model to analyze data from Covid Vaccinations and GDP of all countries because it provides us with predictive capabilities instead of a classification model.
 
 Using continuous data we will identify the relation between data and make predictions regarding the vaccination rate for a country. A diagram of our linear regression thought process [Link is here][4]
 
-Using quickdatabasedesigns.com we created a conceptual design for our mockup database that includes two tables. The first is the master_country table that stores the following columns iso_code (primary key), country_name, population, gdp. The second table will store the vaccination data by country. The results of our conceptual diagram is shown below.
-
-![QuickDBD_vaccination.PNG](Resources/QuickDBD_vaccination.PNG)
-
+Using quickdatabasedesigns.com we created a conceptual design for our mockup database that includes two tables. The first is the master_country table that stores the following columns iso_code (primary key), country_name, population, gdp. The second table will store the vaccination data by country. The results of our conceptual diagram [Link is here][5]
 
 ## Technologies Used
 The technologies used are as follows:
@@ -40,16 +37,6 @@ SciKitLearn is the ML library we'll be using to create a linear regression. We'l
 
 4) Dashboard -
 We created a web enabled dashboard using JavaScript, HTML, and CSS with the Plotly visualization library to build an interactive webpage hosted in GitHub Pages. In addition, we will include the D3 library to visualize our data geographically. A webpage was unanimously agreed upon because of ease of display without a user having to install Tableau or PowerBI.
-
-## Communication Protocols
-
-During this project, we will be using several forms of communication to make sure information is being administered to everyone.
-
-1. Slack - Sharing files and seeking team approvals
-2. Class breakout rooms - Discussing if the segment rubrics are met and checking progress for each member.
-3. Direct messaging with one another to make sure we are on the same page.
-4. Github merges into the main file, whilst always saving backups of the original
-5. Seeking team members approval on changes to main file
 
 ## Project outline
 A flow chart to represent the project working
@@ -153,11 +140,18 @@ The Database stores static data that is sent from Jupyter notebook. The followin
 1. country_master
 2. vaccination_table
 3. human_dev_index
+4. Infection_clean
+
+Here is the Database diagram which shows how the tables are connected in the database.
+![Database connections](https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/main/Database_Integration/QuickDBD_ERD.PNG)
+
+A single query is used to create a new table that is the result of joining other two tables using inner join and primary keys.
+[Link to SQL Query][6]
 
 The following tables are created by joining the data from the above files
-1. gdp_vaccination_join
-2. gdp_vaccination_hdi
-3. country_group
+1. gdp_vaccination_join [Link to pgadmin][7]
+2. gdp_vaccination_hdi [Link to pgadmin][8]
+3. country_group [Link to pgadmin][9]
 
 These joined tables are sent to jupyter notebook using Pandas and Python libraries psycopg2 and sqlalchemy to use further for machine learning.Snapshots of Database integration are available in the [Database Integration folder][3]
 
@@ -225,3 +219,13 @@ Please visit our dashboard to review our analytic and Machine Learning results:
 [3]: https://github.com/Tpw429/Covid-19_Regression_Analysis/tree/main/Database_Integration
 
 [4]: https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/main/Resources/Linear_Regression.PNG
+
+[5]: https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/main/Resources/QuickDBD_vaccination.PNG
+
+[6]: https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/main/Database_Integration/queries_for_SQL.txt
+
+[7]: https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/main/Database_Integration/create_table_gdp_vaccination_join.PNG
+
+[8]: https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/main/Database_Integration/create_table_gdp_vaccination_hdi.PNG
+
+[9]: https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/main/Database_Integration/create_table_country_group.PNG
