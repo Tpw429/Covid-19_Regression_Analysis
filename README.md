@@ -126,12 +126,38 @@ Regression analysis is a reliable method of identifying which variables have an 
 
 This model allows us to confidently determine which of these factors (GDP, HDI, Population) had the biggest impact, or had the largest influence on our dependent variables (Covid Vaccination Rates and Infection Rates).
 
+### Data preprocessing 
+- Acquired Datasets for Vaccinations, GDP, Infections, and HDI 
+- Imported Pandas , sklearn, matplotlib.pyplot, hvplot.pandas, statsmodels.api
+- Imported the dataset that has gone through our ETL process
+- Drop any null values still in the data. We only want countries that have statistics for everything we want to test for.
+- Kept only columns that we were wanting to perform regression analysis on 
+
+### Feature engineering and the feature selection
 For the Vaccination Data, we started by joining the Vaccination table with the GDP table on “country_name”. There were multiple months of dates, but we only needed one to perform the regression analysis. So we filtered to get the date that gave us the most countries tied to it with the least amount of null values across the features. Then we wanted to select the feature that gave us an idea at the rate countries were getting vaccinated, so we took “total_vaccination_per_hundred” and regressed it against other features such as GDP, HDI, Life Expectancy at Birth, and Population. We scaled the data, but found it wasn’t necessary for our regressions to take place or didn't add noticable optimization. 
+
+### How data was split into training and testing sets
+- Initially for our Regression Analysis, there wasn’t a need to split the data for training and testing sets. 
+- However, we did split the data into our independent and dependent variables to see how one features affects or how correlated it is with the other. 
+- Vaccination Rates was chosen as our dependent feature or data set, and GDP, HDI, and Population were chosen as our main independent features to see how they each affected     Vaccination Rates. 
+- For the linear regression (GDP vs people_fully_vaccinated )we tried the random state for splitting and have r^2 score of 54% and variance as 60%
+- For the linear regression (GDP vs people_vaccinated )we tried the random state for splitting and have r^2 score of 68% and variance as 70%
+- For the multi linear regression ( GDP, population and HDI vs people_vaccinated) we tried the random state for splitting and have r^2 score of 69% and variance as 73%
+
+### Model choice, including limitations and benefits
 
 Limitations with this model would be around outliers having a huge effect that that skews our findings. As well, we’re only comparing two variables against each other at a time. So this gives us of an idea of the relationship between the two but it’s not a complete picture of the relationship and what else might be impacting it.
 
+### Changes in model choice
+Since we see a relation between our independent and dependent variable we continue to use Linear regression for the project
+
+### How model was trained
+
+### Model’s confusion matrix, including final accuracy score 
+
 
 ## Database Integration
+
 
 ### The following process is used for connecting different platforms and data transition in the project.
 
