@@ -23,6 +23,8 @@ Using continuous data we will identify the relation between data and make predic
 
 Using quickdatabasedesigns.com we created a conceptual design for our mockup database that includes two tables. The first is the master_country table that stores the following columns iso_code (primary key), country_name, population, gdp. The second table will store the vaccination data by country. The results of our conceptual diagram [Link is here][5]
 
+Plotting pairplots using seaborn library to check relations between our dependent and independent variables, this can help determine which variables can be used for machine learning. [Link is here][10]
+
 ## Technologies Used
 The technologies used are as follows:
 
@@ -280,3 +282,5 @@ Please visit our dashboard to review our analytic and Machine Learning results:
 [8]: https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/main/Database_Integration/create_table_gdp_vaccination_hdi.PNG
 
 [9]: https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/main/Database_Integration/create_table_country_group.PNG
+
+[10]: https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/Akshaya/Segment4/Images/pairplot_gdp_vaccination_hdi.png
