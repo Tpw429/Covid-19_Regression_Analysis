@@ -128,6 +128,13 @@ Regression analysis is a reliable method of identifying which variables have an 
 
 This model allows us to confidently determine which of these factors (GDP, HDI, Population) had the biggest impact, or had the largest influence on our dependent variables (Covid Vaccination Rates and Infection Rates).
 
+To check all these variables we ploted pairplots to help us choose variables for machine learning model <br>
+### Pairplot for gdp_vaccination_hdi dataset
+![](https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/Akshaya/Segment4/Images/pair_gdp_vaccination_hdi.png)
+
+### Pairplot for infection_data
+![](https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/Akshaya/Segment4/Images/pair_plot_infection_data.png)
+
 ### Data preprocessing 
 - Acquired Datasets for Vaccinations, GDP, Infections, and HDI 
 - Imported Pandas , sklearn, matplotlib.pyplot, hvplot.pandas, statsmodels.api
