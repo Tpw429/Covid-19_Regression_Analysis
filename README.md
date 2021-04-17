@@ -23,6 +23,8 @@ Using continuous data we will identify the relation between data and make predic
 
 Using quickdatabasedesigns.com we created a conceptual design for our mockup database that includes two tables. The first is the master_country table that stores the following columns iso_code (primary key), country_name, population, gdp. The second table will store the vaccination data by country. The results of our conceptual diagram [Link is here][5]
 
+Plotting pairplots using seaborn library to check relations between our dependent and independent variables, this can help determine which variables can be used for machine learning. [Link is here][10]
+
 ## Technologies Used
 The technologies used are as follows:
 
@@ -126,6 +128,13 @@ Linear Regression analysis is a reliable method of identifying which variables h
 
 This model allows us to confidently determine which of these factors (GDP, HDI, Population) had the biggest impact, or had the largest influence on our dependent variables (Covid Vaccination Rates and Infection Rates).
 
+To check all these variables we ploted pairplots to help us choose variables for machine learning model <br>
+### Pairplot for gdp_vaccination_hdi dataset
+![](https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/Akshaya/Segment4/Images/pair_gdp_vaccination_hdi.png)
+
+### Pairplot for infection_data
+![](https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/Akshaya/Segment4/Images/pair_plot_infection_data.png)
+
 ### Data preprocessing 
 - Acquired Datasets for Vaccinations, GDP, Infections, and HDI 
 - Imported Pandas , sklearn, matplotlib.pyplot, hvplot.pandas, statsmodels.api
@@ -152,22 +161,31 @@ Limitations with this model would be around outliers having a huge effect that t
 Since we see a relation between our independent and dependent variable we continue to use Linear regression for the project
 
 ### How model was trained
+We considered training data with single and multiple variables. Also changed the train test ratio. The following models below have the best scores for r2 values and variance.
+The best model was GDP,Population, HDI rank vs people vaccinated with test_size=0.2 which gave r2 score 70% and variance 73%. The python file for machine learning[Link is here][11]
+
+- GDP vs People_vaccinated r2 score 68% and variance 70%
+- GDP,Population vs people vaccinated r2 score 69% and variance 73%
+- GDP,Population, HDI rank vs people vaccinated r2 score 69% and variance 73%
+- GDP,Population, HDI rank vs people vaccinated with test_size=0.2 r2 score 70% and variance 73%
+
 
 ### Model’s confusion matrix, including final accuracy score 
-
+With the linear regression and the type of independent and dependent variables we are not able to generate the confusion matrix.
+The best score for the model GDP,Population, HDI rank vs people vaccinated with test_size=0.2 r2 score 70% and variance 73%
 
 ## Database Integration
-
 
 ### The following process is used for connecting different platforms and data transition in the project.
 
 1. Once the data is cleaned and analyzed in Jupyter notebook it is ready for the machine learning model
 2. A database connection is made from Jupyter notebook to postgres using SQLAlchemy
 3. Once the connection is established the data is sent to the database, we send 5 datasets
-4. The data is then joined in postgres, we have 3 joined tables
-5. Then a new database connection is made from postgress to Jupyter notebook using SQLAlchemy
-6. These joined tables are then moved back to jupyter notebook
-7. Once these joined tables are available in Juypyter notebook, the maching learning starts here
+4. The data is stored in the database
+5. The data is then joined in postgres, we have 3 joined tables
+6. Then a new database connection is made from postgress to Jupyter notebook using SQLAlchemy
+7. These joined tables are then moved back to jupyter notebook
+8. Once these joined tables are available in Juypyter notebook, the maching learning starts here
 
 ### Below is a detailed description about the datasets in each phase of data integration
 
@@ -193,7 +211,7 @@ The Database stores static data that is sent from Jupyter notebook. The followin
 3. human_dev_index
 4. Infection_clean
 
-Here is the Database diagram which shows how the tables are connected in the database.
+Here is the ERD which shows how the tables are connected in the database.<br>
 ![Database connections](https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/main/Database_Integration/QuickDBD_ERD.PNG)
 
 A single query is used to create a new table that is the result of joining other two tables using inner join and primary keys.
@@ -261,7 +279,8 @@ Please visit our dashboard to review our analytic and Machine Learning results:
 - Right now we have only one feature (people fully vaccinated) seen on the map, but for future we can add more features for selection.
 
 
-## [Google Slides Covid-19 Regression Analysis Presentation](https://docs.google.com/presentation/d/1JQeOwovcKA4-0dyTTak2V6hE9sy4mft0BnIYaICz5B4/edit?usp=sharing)
+Below is the link to google slides and the original ppt is avaiable for speaker notes as part of submisssion. [Link is here][12]
+### [Google Slides Covid-19 Regression Analysis Presentation](https://docs.google.com/presentation/d/1JQeOwovcKA4-0dyTTak2V6hE9sy4mft0BnIYaICz5B4/edit?usp=sharing)
 
 [1]: https://github.com/Tpw429/Covid-19_Regression_Analysis/tree/main/Resources
 
@@ -280,3 +299,10 @@ Please visit our dashboard to review our analytic and Machine Learning results:
 [8]: https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/main/Database_Integration/create_table_gdp_vaccination_hdi.PNG
 
 [9]: https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/main/Database_Integration/create_table_country_group.PNG
+
+[10]: https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/Akshaya/Segment4/Images/pairplot_gdp_vaccination_hdi.png
+
+[11]: https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/Akshaya/Segment4/Machine_Learning_1/Machine_Learning_Final.ipynb
+
+[12]: https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/Akshaya/Segment4/Covid-19%20Regression%20Analysis%20Project%20flashcards.pdf
+
