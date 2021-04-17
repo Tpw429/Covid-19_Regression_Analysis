@@ -171,10 +171,10 @@ The best model was GDP,Population, HDI rank vs people vaccinated with test_size=
 
 
 ### Model’s confusion matrix, including final accuracy score 
-
+With the linear regression and the type of independent and dependent variables we are not able to generate the confusion matrix.
+The best score for the model GDP,Population, HDI rank vs people vaccinated with test_size=0.2 r2 score 70% and variance 73%
 
 ## Database Integration
-
 
 ### The following process is used for connecting different platforms and data transition in the project.
 
