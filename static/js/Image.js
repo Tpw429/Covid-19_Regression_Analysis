@@ -1,18 +1,14 @@
 var images = {
-    Covid: 
-        "Images/covid_pic.jpeg",
-    Pairplot:
-        "Images/data_preprocess_pairplot_gdp_vaccination_hdi.png",
     GDP:
-        "Images/GDP_vs_VaccinationRate.png", 
+        "Images/GDP_vs_VaccinationRate.PNG", 
     HDI:
-        "Images/HDI_vs_VaccinationRate.png",
+        "Images/HDI_vs_VaccinationRate.PNG",
     HDI_Rank:
-        "Images/HDIRank_vs_VaccinationRate.png",
+        "Images/HDIRank_vs_VaccinationRate.PNG",
     Life_Expectancy: 
-        "Images/LifeExpectancy_vs_VaccinationRate.png",
+        "Images/LifeExpectancy_vs_VaccinationRate.PNG",
     Population: 
-        "Images/Population_vs_VaccinationRate.png",
+        "Images/Population_vs_VaccinationRate.PNG",
     
 };
 
@@ -26,4 +22,3 @@ var imageList = document.getElementById("imageList");
 imageList.addEventListener("change", changeImage, false);
 
 document.getElementById("image").src = images["default"];
-
