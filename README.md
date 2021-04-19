@@ -1,105 +1,101 @@
 # Covid-19 Regression Analysis
 
-Covid-19 is a global pandemic which has rocked our society to its core. It has caused massive fatality, increased unemployment across the nation, and shutdown travel in many parts of the world. We have decided that as a team we will be analyzing Covid-19 data because of its relevance in everyday life around us. It has affected our health, our jobs, and our way of life. Over the next few weeks, our team will be focused on recognizing and analyzing trends due to covid-19. The team members of this project include: Akshaya Kamble, Ray Hunt, Thomas Watson, and Tyler Engalla. Throughout the project we will be collaborting and working with one another to divide and conquer the full affects of this pandemic.
+## Roster
+The team members of this project include: Akshaya Kamble, Ray Hunt, Thomas Watson, and Tyler Engalla.
 
-During this catastrope, we saw new daily confirmed patients into hospitals soaring as high as 18,000 new patients per day. Shortly after Covid-19 vaccinations became public, we began to see the number of covid confirmed patients fall significantly. The figure below shows the trend described. 
+## Problem Statement
+Covid-19 is a global pandemic resulting in death, econmoic pressures and the shutdown of travel in many parts of the world. Fortunately, vaccines are being made available to innoculate populations against Covid-19 and reduce the virus' opportunity to mutate.
+
+Throughout 2020, we saw new daily confirmed patients into hospitals soaring as high as 18,000 new patients per day. Shortly after Covid-19 vaccinations became public, we began to see the number of covid confirmed patients fall significantly: 
 
 ![Covid-19_DailyCases.PNG](Resources/Covid-19_DailyCases.PNG)
 
-In the figure above, we see that the newly confirmed Covid-19 patients tend to slowly increase with time up until January of 2021. In Feburary of 2021, we see a remarkable change in the shift of newly confirmed covid-19 patients per day. The case count begins to decrease rapdily with time, up until a support line is reached. This support line is very difficult to go below, because of factors such as available vaccinations, limited medical and economical resources available, and social distancing regulations changing. Although this is not a value we tabulated, it is important because it helps us understand the general health outline for Covid-19 during the past few months.
+Aside from vaccine avialability, what factors impact the vaccination rate of a given country? Does a country's GDP improve its vaccination rate? What impact does population demographics have on a country's vaccination rate? Upon understanding these factors, can we predict a country's vaccination rate? 
 
-## Getting Started
+We will analyze how certain attributes such as  Gross Domestic Product (GDP), Human Development Index (HDI), and population directly impact the spread of Covid-19 and the vaccination rate.
+
+## Initial Analysis
 In the first week of the project, we had to make decisions on which technologies would be used to help us analyze Covid-19 data. 
 
-- For the final project we have selected Supervised Machine learning, and decided that we will use a Linear Regression Model to help us analyze data from Covid Vaccinations and GDP of all countries. This model will help predict distributions of the vaccines in each country. As we have continuous data we will identify the relation between data and make predictions. A diagram of our linear regression thought process has been included below.
+For the final project we have selected Supervised Machine learning because the the input data is known (Gross Domestic Product, Human Development Index, population and demographic data) and a desired output (vaccination rate). We selected a Linear Regression model to analyze data from Covid Vaccinations and GDP of all countries because it provides us with predictive capabilities instead of a classification model.
 
-![Linear_Regression.PNG](Resources/Linear_Regression.PNG)
+Using continuous data we will identify the relation between data and make predictions regarding the vaccination rate for a country. A diagram of our linear regression thought process [Link is here][4]
 
-For the Linear Regression model we have imported a new Folder into our main Repository called Machine_Learning_1. This Linear Regression model takes in data from our provisional database and outputs labels for input data. This model lays a strong foundation for how we will move forward in the coming weeks.
+Using quickdatabasedesigns.com we created a conceptual design for our mockup database that includes two tables. The first is the master_country table that stores the following columns iso_code (primary key), country_name, population, gdp. The second table will store the vaccination data by country. The results of our conceptual diagram [Link is here][5]
 
-- Using quickdatabasedesigns.com we created a conceptual design for our mockup database that includes two tables. The first is the master_country table that stores the following columns iso_code (primary key), country_name, population, gdp. The second table will store the vaccination data by country. The results of our conceptual diagram is shown below.
+Plotting pairplots using seaborn library to check relations between our dependent and independent variables, this can help determine which variables can be used for machine learning. [Link is here][10]
 
-![QuickDBD_vaccination.PNG](Resources/QuickDBD_vaccination.PNG)
-
-Several other questions we considered were as follows:
-- Which tools are the best fit for our project?
-- What tool will be used for each section?
+## Technologies Used
+The technologies used are as follows:
 
 1) Data Cleaning and Analysis -
-Jupyter Notebook and the Pandas library will be used to clean the data and perform an exploratory analysis. Further analysis will be completed using Python.
+Jupyter Notebook and the Pandas library will be used to clean the data and perform an exploratory analysis. Further analysis will be completed using Python. Jupyter was selected because of the team's familiarity with the tool. Python was chosen because of its  libraries for data ingestion and analysis such as Pandas and the ease of creating Machine Learning models using SKLearn as well as visualization capabilities in MatPlotLib.
 
 2) Database Storage -
-Postgres is the database we intend to use, and we will integrate Flask to display the data.
+Postgres is the database used. It is easy to implement and run MySQL querries. We decided against AWS RDS because of the associated costs and several team members had alreacy cancelled their accounts.
 
 3) Machine Learning -
 SciKitLearn is the ML library we'll be using to create a linear regression. We'll train our algorithm with a histocal dataset on Covid Vaccinations and GDP of all countries.
 
 4) Dashboard -
-In addition to using a Flask template, we will also integrate JavaScript, HTML, and CSS with the Plotly visualization library to build an interactive webpage. In addition, we may include the D3 library to visualize our data geographically.
-
-## The Plan Ahead
-
-In our project, we will be analyzing if a country's GDP affects the rate at which vaccinations are being adminsitered and when we expect each country to achieve full vaccination. 
-
-We will be collecting data from Kaggle around vaccination rates and combining that with GDP data gathered to apply to our linear regression model to answer questions such as how GDP affects vaccination rates and when we expect full vaccination or immunity within a country.
-
-## Communication Protocols
-
-During this project, we will be using several forms of communication to make sure information is being administered to everyone.
-
-1. Slack - Sharing files and seeking team approvals
-2. Class breakout rooms - Discussing if the segment rubrics are met and checking progress for each member.
-3. Direct messaging with one another to make sure we are on the same page.
-4. Github merges into the main file, whilst always saving backups of the original
-5. Seeking team members approval on changes to main file
+We created a web enabled dashboard using JavaScript, HTML, and CSS with the Plotly visualization library to build an interactive webpage hosted in GitHub Pages. In addition, we will include the D3 library to visualize our data geographically. A webpage was unanimously agreed upon because of ease of display without a user having to install Tableau or PowerBI.
 
 ## Project outline
 A flow chart to represent the project working
 ![](https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/main/Database_Integration/project_outline.PNG)
 
-## Data Source and Description
+## Data Sources and Description
 
 The data used in this project are included in the links below:
 
-1. CDC Link: https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?name_desc=false
+1. CDC Link: https://covid.cdc.gov/covid-data-tracker/#datatracker-home 
 2. Kaggle Data: https://www.kaggle.com/gpreda/covid-world-vaccination-progress
 3. World Bank Data: https://data.worldbank.org/indicator/NY.GDP.MKTP.CD
 4. Our World In Data: https://github.com/owid/covid-19-data/tree/master/public/data
 5. UNDP data for hdi : http://hdr.undp.org/en/data
 
-These datasets include information about GDP, vaccations given, total vaccinations, vaccinations per day, country administered, date, and much more. These five data sources have been chosen based off accuracy, their input type, and completeness. Descriptions of our files are included below.
+These five data sources have been chosen based off accuracy, their input type, and completeness. Descriptions of our files are included below.
 
-1. country_gdp - This file from world bank has GDP for all countries starting from year 1960 to 2019, Since we are using covid-19 data for the project we will use gdp from the year 2019.
+1. country_gdp - This file from world bank has GDP for all countries starting from year 1960 to 2019, since we are using covid-19 data for the project we will use gdp from the year 2019.
 
-2. country_vaccinations - This file from kaggle has vaccination data for all countries along with dates,As the vaccinations are still 
+2. country_vaccinations - This file from kaggle has vaccination data for all countries along with dates, as the vaccinations are still 
 in progress some countries have advanced towards some small percent of population considered fully vaccinated while some countries no not have any data.
 
-3. world_population - This file from world bank has populations for all countries from year 1960 to 2019. As per project requirements we have used data only for the year 2019.This data is added to the gdp data file
+3. world_population - This file from world bank has populations for all countries from year 1960 to 2019. As per project requirements we have used data only for the year 2019.This data is added to the gdp data file.
 
 4. human_dev_index - This file from UNITED NATIONS DEVELOPMENT PROGRAMME has human development index(HDI) for all countries along with Human Development Type which are required for the project
 
-5. Infection_Data - This file from github repository has updated data from Our World in Data.This file has data about the infections rates,deaths, new case,hospitalization rate, testing dates for different countries.We have filtered the dataset as per project requirements and included data like total cases and total deaths. 
-
-## Questions we Hope to Answer
-
-Given our strict timeline on this Covid-19 analysis, we would like to analyze how certain attributes such as age, Gross Domestic Product (GDP), Human Development Index (HDI), and population directly impact the spread of Covid-19. If time allows, we would also be interested in creating a model to help us predict the spread of Covid-19 in the future. In addition, by the end of the project our visuals should be extremely user friendly and portray an effective message.
+5. Infection_Data - This file from github repository has updated data from Our World in Data.This file has data about the infections rates,deaths, new case,hospitalization rate, testing dates for different countries.We have filtered the dataset as per project requirements and included data like total cases and total deaths.  
 
 ## Description of Data Exploration Phase
-1. Importing data from websites in csv and excel formats
-2. Cleaning data in Jupyter notebook using the following methods:
 
-	a. Checking Data Types <br/>
-	b. Replace NaN by 0 <br/>
-	c. Removing Nan <br/>
-	d. Outlier detection with help of scatter plot <br/>
-	e. Editing column names by removing spaces <br/>
-	f. Changing column names to match the SQL schema <br/>
-	g. Filter required columns as some tables contain irrelevant data for project <br/>
+### Looking at our datasets
 
-3. Making Database connection to Postgres and sending the cleaned Data Frames from Jupyter notebook to Postgres
-4. Joining tables in postgres to create master data files
-5. Making database connection to Postgres to import the joined tables in Jupyter notebook as new DataFrame.
-6. Using the Data Frame for machine learning 
+- The below datasets were downloaded in March 2021 and will be used as a static data for the project
+- 5 Data sets are downloaded from the websites in csv and excel formats
+- 5 Data sets cleaned in Jupyternotebook
+- 3 different joins will be done in Postgres database
+- 150 Countries are available in the country_vaccinations Dataset which have information about vaccinations at different dates and stages
+- The country_gdp dataset has GDP for 265 countries and territories, and we will use data for only 2019
+- The human_dev_index dataset has HDI for 196 countries and territories, and we will use data for only 2019
+- The world_population dataset has population data for 265 countries,and we will use data for only 2019 
+- The Infection_Data dataset has infection data for 213 countries
+- After the basic clenaing we have 67 countries that can be used for the machine learning model
+- 82 Countries have information for people fully vaccinated, but this is a very small percent just 0.2%
+- 150 Countries have received vaccinations as per country_vaccinations dataset
+- 138 Countries have people vaccinated, which means they have received atleast some quantities of the first dose
+- A lot of countries have no information for us form the dataset country_vaccinations, we see that no vaccinations were received, if vaccinations were received they were not administered and in some cases there is absolutely no information for some countries.The Probable reason could be that these countries do not have any means to record data or no proper medical guidance and facilities
+- 44 countries received vaccinations but no future progress recorded is available.
+
+### The following methods can be implied for making the data ready for machine learning model
+
+- Checking Data Types <br/>
+- Replace NaN by 0 <br/>
+- Removing Nan <br/>
+- Outlier detection with help of scatter plot <br/>
+- Editing column names by removing spaces <br/>
+- Changing column names to match the SQL schema <br/>
+- Filter required columns as some tables contain irrelevant data for project <br/>
 
 ## Description of the Analysis Phase
 As data cleaning is the primary requirement for getting a perfect machine learning model we have incorporated the following methods for cleaning data in the individual files.For the project our main focus was to obtain data for GDP,HDI,population and people fully vaccinated for each country so that we can find relations between the data we have.Before sending the data to machine learning the data was cleaned, sent to postgres for storing and joining data as required.The data will help us determine the relation between HDI vs Total cases per million, HDI vs Population,GDP per Capita vs Total Cases per Million,Population Density vs Total Cases per Million,Median Age vs Total Deaths,Aged 70 or older vs Total Deaths,GDP vs Vaccination Rates,HDI vs Vaccincation Rates.
@@ -128,16 +124,70 @@ We are trying to find the relationship between two or more continuous variables.
 
 We chose a supervised machine learning model because our data has labels (this is GDP, HDI, Population) and it’s learning based on those input values what the output of Covid Vaccination Rate and Infection Rate might be. 
 
-Regression analysis is a reliable method of identifying which variables have an impact on our topic of interest and gives us the ability to easily visualize that relationship with scatter plots and a best fit line. 
+Linear Regression analysis is a reliable method of identifying which variables have an impact on our topic of interest and gives us the ability to easily visualize that relationship with scatter plots and a best fit line. 
 
 This model allows us to confidently determine which of these factors (GDP, HDI, Population) had the biggest impact, or had the largest influence on our dependent variables (Covid Vaccination Rates and Infection Rates).
 
+To check all these variables we ploted pairplots to help us choose variables for machine learning model <br>
+### Pairplot for gdp_vaccination_hdi dataset
+![](https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/Akshaya/Segment4/Images/pair_gdp_vaccination_hdi.png)
+
+### Pairplot for infection_data
+![](https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/Akshaya/Segment4/Images/pair_plot_infection_data.png)
+
+### Data preprocessing 
+- Acquired Datasets for Vaccinations, GDP, Infections, and HDI 
+- Imported Pandas , sklearn, matplotlib.pyplot, hvplot.pandas, statsmodels.api
+- Imported the dataset that has gone through our ETL process
+- Drop any null values still in the data. We only want countries that have statistics for everything we want to test for.
+- Kept only columns that we were wanting to perform regression analysis on 
+
+### Feature engineering and the feature selection
 For the Vaccination Data, we started by joining the Vaccination table with the GDP table on “country_name”. There were multiple months of dates, but we only needed one to perform the regression analysis. So we filtered to get the date that gave us the most countries tied to it with the least amount of null values across the features. Then we wanted to select the feature that gave us an idea at the rate countries were getting vaccinated, so we took “total_vaccination_per_hundred” and regressed it against other features such as GDP, HDI, Life Expectancy at Birth, and Population. We scaled the data, but found it wasn’t necessary for our regressions to take place or didn't add noticable optimization. 
+
+### How data was split into training and testing sets
+- Initially for our Regression Analysis, there wasn’t a need to split the data for training and testing sets. 
+- However, we did split the data into our independent and dependent variables to see how one features affects or how correlated it is with the other. 
+- Vaccination Rates was chosen as our dependent feature or data set, and GDP, HDI, and Population were chosen as our main independent features to see how they each affected     Vaccination Rates. 
+- For the linear regression (GDP vs people_fully_vaccinated )we tried the random state for splitting and have r^2 score of 54% and variance as 60%
+- For the linear regression (GDP vs people_vaccinated )we tried the random state for splitting and have r^2 score of 68% and variance as 70%
+- For the multi linear regression ( GDP, population and HDI vs people_vaccinated) we tried the random state for splitting and have r^2 score of 69% and variance as 73%
+
+### Model choice, including limitations and benefits
 
 Limitations with this model would be around outliers having a huge effect that that skews our findings. As well, we’re only comparing two variables against each other at a time. So this gives us of an idea of the relationship between the two but it’s not a complete picture of the relationship and what else might be impacting it.
 
+### Changes in model choice
+Since we see a relation between our independent and dependent variable we continue to use Linear regression for the project
+
+### How model was trained
+We considered training data with single and multiple variables. Also changed the train test ratio. The following models below have the best scores for r2 values and variance.
+The best model was GDP,Population, HDI rank vs people vaccinated with test_size=0.2 which gave r2 score 70% and variance 73%. The python file for machine learning[Link is here][11]
+
+- GDP vs People_vaccinated r2 score 68% and variance 70%
+- GDP,Population vs people vaccinated r2 score 69% and variance 73%
+- GDP,Population, HDI rank vs people vaccinated r2 score 69% and variance 73%
+- GDP,Population, HDI rank vs people vaccinated with test_size=0.2 r2 score 70% and variance 73%
+
+
+### Model’s confusion matrix, including final accuracy score 
+With the linear regression and the type of independent and dependent variables we are not able to generate the confusion matrix.
+The best score for the model GDP,Population, HDI rank vs people vaccinated with test_size=0.2 r2 score 70% and variance 73%
 
 ## Database Integration
+
+### The following process is used for connecting different platforms and data transition in the project.
+
+1. Once the data is cleaned and analyzed in Jupyter notebook it is ready for the machine learning model
+2. A database connection is made from Jupyter notebook to postgres using SQLAlchemy
+3. Once the connection is established the data is sent to the database, we send 5 datasets
+4. The data is stored in the database
+5. The data is then joined in postgres, we have 3 joined tables
+6. Then a new database connection is made from postgress to Jupyter notebook using SQLAlchemy
+7. These joined tables are then moved back to jupyter notebook
+8. Once these joined tables are available in Juypyter notebook, the maching learning starts here
+
+### Below is a detailed description about the datasets in each phase of data integration
 
 The following files are downloaded from the websites and cleaned in Jupyter notebook for the project. The population data for 2019 is added to the country_gdp.csv file using VLOOKUP. All these files are available in the [Resources folder][1]
 
@@ -159,16 +209,23 @@ The Database stores static data that is sent from Jupyter notebook. The followin
 1. country_master
 2. vaccination_table
 3. human_dev_index
+4. Infection_clean
+
+Here is the ERD which shows how the tables are connected in the database.<br>
+![Database connections](https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/main/Database_Integration/QuickDBD_ERD.PNG)
+
+A single query is used to create a new table that is the result of joining other two tables using inner join and primary keys.
+[Link to SQL Query][6]
 
 The following tables are created by joining the data from the above files
-1. gdp_vaccination_join
-2. gdp_vaccination_hdi
-3. country_group
+1. gdp_vaccination_join [Link to pgadmin][7]
+2. gdp_vaccination_hdi [Link to pgadmin][8]
+3. country_group [Link to pgadmin][9]
 
 These joined tables are sent to jupyter notebook using Pandas and Python libraries psycopg2 and sqlalchemy to use further for machine learning.Snapshots of Database integration are available in the [Database Integration folder][3]
 
 
-## Visualizations, Storyboard, and Dashboard
+## Visualizations and Storyboard
 
 Portraying results is important because it brings weight to our analysis. Images, interactive figures, Github, and Google Slides are all powerful tools which can help us share our findings to the masses. 
 
@@ -199,17 +256,53 @@ In the Storyboard we plan to use the following visualizations to add value to ou
 What tools will be used to create this dashboard?
 - For this project we plan to integrate several tools to create these visualizations. For the majority of the project we have been using Python to sift through our data. Therefore, it makes sense for us to create crisper images with Seaborn for a better user experience. In addition, for the world map we were thinking of using GeoJSON to make it an interactive experience with our user. These are steps we plan to integrate in the next several weeks.
 
-Blueprint for Dashboard
+## Dashboard
+Please visit our dashboard to review our analytic and Machine Learning results:
+[Dashboard Link](https://tpw429.github.io/Covid-19_Regression_Analysis/)
 
-- We plan to make our Dashbaord browser based.
-- We will build it using D3.js with the buildcharts() function.
-- Use JavaScript to populate and read a drop-down menu selection and update a bubble chart.
-- Deploy our project to GitHub Pages
+### The dashboard is built using the following technologies
+- HTML
+- Python Libraries -plotly,hvplot,matplotlib
+- Javascript Libraries - Leaflet and D3.js
+- The dashboard is deployed on GitHub Pages
 
-## [Google Slides Covid-19 Regression Analysis Presentation](https://docs.google.com/presentation/d/160j7slMeWWwnzbZd6SgaqRAt3yMQrFRDSncezrBMbZ0/edit?usp=sharing)
+### Interactivity of our Dashboard
+
+- Interactive drop down menu pulls titles (GDP,HDI,HDI rank,Life Expectancy and Population) from a list
+- After selection of a menu item, the respective image is displayed below.
+- Information about the drop down menu items is displayed in a paragraph below the image.
+- Next below we have an Interactive map
+- Map displays information about people fully vaccinated with different color and size cirles plotted on each country.
+- A pop up displays country and population
+- An index of the population range is available on the down right corner
+- The map can toggle between street and dark view
+- Right now we have only one feature (people fully vaccinated) seen on the map, but for future we can add more features for selection.
+
+
+Below is the link to google slides and the original ppt is avaiable for speaker notes as part of submisssion. [Link is here][12]
+### [Google Slides Covid-19 Regression Analysis Presentation](https://docs.google.com/presentation/d/1JQeOwovcKA4-0dyTTak2V6hE9sy4mft0BnIYaICz5B4/edit?usp=sharing)
 
 [1]: https://github.com/Tpw429/Covid-19_Regression_Analysis/tree/main/Resources
 
 [2]: https://github.com/Tpw429/Covid-19_Regression_Analysis/tree/main/Cleaned%20Data
 
 [3]: https://github.com/Tpw429/Covid-19_Regression_Analysis/tree/main/Database_Integration
+
+[4]: https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/main/Resources/Linear_Regression.PNG
+
+[5]: https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/main/Resources/QuickDBD_vaccination.PNG
+
+[6]: https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/main/Database_Integration/queries_for_SQL.txt
+
+[7]: https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/main/Database_Integration/create_table_gdp_vaccination_join.PNG
+
+[8]: https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/main/Database_Integration/create_table_gdp_vaccination_hdi.PNG
+
+[9]: https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/main/Database_Integration/create_table_country_group.PNG
+
+[10]: https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/Akshaya/Segment4/Images/pairplot_gdp_vaccination_hdi.png
+
+[11]: https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/Akshaya/Segment4/Machine_Learning_1/Machine_Learning_Final.ipynb
+
+[12]: https://github.com/Tpw429/Covid-19_Regression_Analysis/blob/Akshaya/Segment4/Covid-19%20Regression%20Analysis%20Project%20flashcards.pdf
+
