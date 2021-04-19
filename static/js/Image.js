@@ -1,6 +1,6 @@
 var images = {
     GDP:
-        "Images/GDP_vs_VaccinationRate.png", 
+        "Images/GDP_vs_VaccinationRate.PNG", 
     HDI:
         "Images/HDI_vs_VaccinationRate.png",
     HDI_Rank:
