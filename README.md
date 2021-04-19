@@ -281,7 +281,7 @@ Please visit our dashboard to review our analytic and Machine Learning results:
 - Right now we have only one feature (people fully vaccinated) seen on the map, but for future we can add more features for selection.
 
 
-Below is the link to google slides and the original ppt is avaiable for speaker notes as part of submisssion. [Link is here][12]
+Below is the link to google slides and the original ppt is available for speaker notes as part of submisssion. [Link is here][12]
 ### [Google Slides Covid-19 Regression Analysis Presentation](https://docs.google.com/presentation/d/1JQeOwovcKA4-0dyTTak2V6hE9sy4mft0BnIYaICz5B4/edit?usp=sharing)
 
 [1]: https://github.com/Tpw429/Covid-19_Regression_Analysis/tree/main/Resources
