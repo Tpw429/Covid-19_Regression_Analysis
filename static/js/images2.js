@@ -1,8 +1,8 @@
 var images2 = {
     Database:
-        "Images/QuickDBD_vaccination.png", 
+        "Images/QuickDBD_vaccination.PNG", 
     Machine_learning_flow:
-        "Images/Linear_Regression.png",
+        "Images/Linear_Regression.PNG",
     Pairplot:
         "Images/data_preprocess_pairplot_gdp_vaccination_hdi.png",
     
