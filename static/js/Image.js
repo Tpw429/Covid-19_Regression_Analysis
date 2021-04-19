@@ -10,7 +10,7 @@ var images = {
     Population: 
         "Images/Population_vs_VaccinationRate.png",
     Initial_Analysis: 
-        "Images/pairplot_gdp_vaccination_hdi.png",
+        "Images/data_preprocess_pairplot_gdp_vaccination_hdi.png",
 };
 
 var changeImage = function() {
