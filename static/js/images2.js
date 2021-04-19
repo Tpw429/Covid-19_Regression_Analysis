@@ -1,4 +1,3 @@
-  
 var images2 = {
     Database:
         "Images/QuickDBD_vaccination.png", 
@@ -20,3 +19,4 @@ var imageList = document.getElementById("imageList");
 imageList.addEventListener("change", changeImage, false);
 
 document.getElementById("image").src = images2["default"];
+
