@@ -268,6 +268,7 @@ Please visit our dashboard to review our analytic and Machine Learning results:
 
 ### Interactivity of our Dashboard
 
+- Initial Analysis image available in drop down menu.
 - Images of the initial analysis is available in the drop down menu along with other list items.
 - Interactive drop down menu pulls titles (GDP,HDI,HDI rank,Life Expectancy and Population) from a list
 - After selection of a menu item, the respective image is displayed below.
