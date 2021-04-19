@@ -1,8 +1,4 @@
 var images = {
-    Covid: 
-        "Images/covid_pic.jpeg",
-    Pairplot:
-        "Images/data_preprocess_pairplot_gdp_vaccination_hdi.png",
     GDP:
         "Images/GDP_vs_VaccinationRate.png", 
     HDI:
@@ -13,7 +9,8 @@ var images = {
         "Images/LifeExpectancy_vs_VaccinationRate.png",
     Population: 
         "Images/Population_vs_VaccinationRate.png",
-    
+    Initial_Analysis: 
+        "Images/pairplot_gdp_vaccination_hdi.png",
 };
 
 var changeImage = function() {
@@ -27,4 +24,3 @@ imageList.addEventListener("change", changeImage, false);
 
 document.getElementById("image").src = images["default"];
 
-// final commit
