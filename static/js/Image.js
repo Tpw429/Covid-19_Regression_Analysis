@@ -4,13 +4,13 @@ var images = {
     HDI:
         "Images/HDI_vs_VaccinationRate.PNG",
     HDI_Rank:
-        "Images/HDIRank_vs_VaccinationRate.PNG
+        "Images/HDIRank_vs_VaccinationRate.PNG",
     Life_Expectancy: 
-        "Images/LifeExpectancy_vs_VaccinationRate.PNG
+        "Images/LifeExpectancy_vs_VaccinationRate.PNG",
     Population: 
-        "Images/Population_vs_VaccinationRate.PNG
+        "Images/Population_vs_VaccinationRate.PNG",
     Initial_Analysis: 
-        "Images/data_preprocess_pairplot_gdp_vaccination_hdi.png
+        "Images/data_preprocess_pairplot_gdp_vaccination_hdi.png"
 };
 
 var changeImage = function() {
