@@ -104,19 +104,19 @@ In some columns the null values are droped because we require data for the respe
 The below file have details about the tranformations done individually.
 
 1. country_gdp
-This file is downloaded from the worldbank.The NaN are replaced by 0, the column names are changed to match the schema in SQL, deleting columns and keeping only required columns.Saving the file country_master.csv to Cleaned Data folder.
+- This file was downloaded from the worldbank database. The NaN values have been replaced with 0, the column names are changed to match the schema in SQL, deleting columns and keeping only required columns. This file was then saved as 'file country_master.csv' to the Cleaned Data folder.
 
 2. country_vaccinations
-This file is downloaded from kaggle. Dropping the NaN data as we need countries with available data only,changing names of columns to match schema in SQL,deleting columns and keeping only required columns,Saving the file vaccination_table.csv to Cleaned Data folder.
+- This file was downloaded from Kaggle. For countries with insufficient data, NaN values were dropped for certain countries, the names of the columns were changed to match the schema in SQL, and we deleted extra columns. This file was saved as the file vaccination_table.csv to the Cleaned Data folder.
 
 3. world_population
-This file is downloaded from world bank.The only required data of population from 2019 is saved into country_master.csv using vlookup. 
+- This file was downloaded from world bank. The only required data of population from 2019 was saved into country_master.csv using vlookup. 
 
 4. human_dev_index
-This file is downloaded from UNITED NATIONS DEVELOPMENT PROGRAMME.Changing names of columns to match schema in SQL, droping rows with null values.Saving the file human_dev_index.csv to Cleaned Data folder.
+- This file was downloaded from the UNITED NATIONS DEVELOPMENT PROGRAMME. Names of the columns were changed to match the schema in SQL and rows with null values were dropped. The file human_dev_index.csv was saved to the Cleaned Data folder.
 
 5. Infection_Data
-This file from github repository has updated data from Our World in Data.Filtered data with date,changing names of columns to match schema in SQL,dropping null values.Checking outliers using scatter plot.Saving the file as Infection_Clean.csv to Cleaned Data folder 
+- This file from github repository has updated data from the Our World in Data database. The data was filtered by date, columns names were altered to match the schema in SQL, and null values were dropped. The Infection_Clean.csv was saved to the Cleaned Data folder 
 
 ## Machine Learning Model
 
