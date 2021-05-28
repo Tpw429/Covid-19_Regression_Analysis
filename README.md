@@ -6,7 +6,7 @@ The team members of this project include: Akshaya Kamble, Ray Hunt, Thomas Watso
 ## Problem Statement
 Covid-19 is a global pandemic resulting in death, econmoic pressures and the shutdown of travel in many parts of the world. Fortunately, vaccines are being made available to innoculate populations against Covid-19 and reduce the virus' opportunity to mutate.
 
-Throughout 2020, we saw new daily confirmed patients into hospitals soaring as high as 18,000 new patients per day. Shortly after Covid-19 vaccinations became public, we began to see the number of covid confirmed patients fall significantly: 
+Throughout 2020, we saw new daily confirmed patients into hospitals soaring as high as 18,000 new patients per day. Shortly after Covid-19 vaccinations became public, we began to see the number of covid confirmed patients fall significantly as shown in the figure below.
 
 ![Covid-19_DailyCases.PNG](Resources/Covid-19_DailyCases.PNG)
 
