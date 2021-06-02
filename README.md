@@ -1,8 +1,3 @@
-# Covid-19 Regression Analysis
-
-## Roster
-The team members of this project include: Akshaya Kamble, Ray Hunt, Thomas Watson, and Tyler Engalla.
-
 ## Problem Statement
 Covid-19 is a global pandemic resulting in death, econmoic pressures and the shutdown of travel in many parts of the world. Fortunately, vaccines are being made available to innoculate populations against Covid-19 and reduce the virus' opportunity to mutate.
 
